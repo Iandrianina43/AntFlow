@@ -80,7 +80,7 @@ class _SearchMembersWidgetState extends State<SearchMembersWidget> {
               ),
               title: Text(
                 FFLocalizations.of(context).getText(
-                  'i5eebch9' /* Add Members */,
+                  'r9ilya9c' /* Add Members */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineSmall.override(
                       fontFamily:
@@ -113,7 +113,7 @@ class _SearchMembersWidgetState extends State<SearchMembersWidget> {
                             obscureText: false,
                             decoration: InputDecoration(
                               labelText: FFLocalizations.of(context).getText(
-                                'bn37syph' /* Search members... */,
+                                'q9q7yvdo' /* Search members... */,
                               ),
                               labelStyle: FlutterFlowTheme.of(context)
                                   .labelMedium
@@ -230,7 +230,7 @@ class _SearchMembersWidgetState extends State<SearchMembersWidget> {
                             EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'ux02ixql' /* Search Memebers */,
+                            '1xy4hdeo' /* Search Memebers */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .bodySmall
@@ -426,7 +426,7 @@ class _SearchMembersWidgetState extends State<SearchMembersWidget> {
                                             },
                                             text: FFLocalizations.of(context)
                                                 .getText(
-                                              'kmiq19hs' /* Assign */,
+                                              'smwdet6x' /* Assign */,
                                             ),
                                             options: FFButtonOptions(
                                               width: 80.0,

@@ -25,23 +25,23 @@ class LoginModel extends FlutterFlowModel<LoginWidget> {
       BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
-        'tazfclws' /* Field is required */,
+        '7vbr8i14' /* Field is required */,
       );
     }
 
     if (val.length < 5) {
       return FFLocalizations.of(context).getText(
-        '64wzffab' /* Email address should be minimu... */,
+        'isystq8l' /* Email address should be minimu... */,
       );
     }
     if (val.length > 60) {
       return FFLocalizations.of(context).getText(
-        'anmgh4rt' /* email address is too long */,
+        '0vvbu09f' /* email address is too long */,
       );
     }
     if (!RegExp(kTextValidatorEmailRegex).hasMatch(val)) {
       return FFLocalizations.of(context).getText(
-        'niw2rp7x' /* Email seems to be invalid. Ple... */,
+        'qop6wibf' /* Email seems to be invalid. Ple... */,
       );
     }
     return null;

@@ -137,7 +137,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                   children: [
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        'uap9xd08' /* Assign Member */,
+                                        'vt3uv50f' /* Assign Member */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .headlineMedium
@@ -171,7 +171,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                   16.0, 0.0, 0.0, 0.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              'v3df17c1' /* Find members by searching belo... */,
+                                              'abde9rd0' /* Find members by searching belo... */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodySmall
@@ -217,7 +217,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                      '4gubn0rd' /* Search members... */,
+                                                      'iv874nug' /* Search members... */,
                                                     ),
                                                     labelStyle: FlutterFlowTheme
                                                             .of(context)
@@ -685,7 +685,7 @@ class _AddTeamWidgetState extends State<AddTeamWidget> {
                                                                   text: FFLocalizations.of(
                                                                           context)
                                                                       .getText(
-                                                                    'k3vvd9ha' /* Assign */,
+                                                                    'st02dqz2' /* Assign */,
                                                                   ),
                                                                   options:
                                                                       FFButtonOptions(

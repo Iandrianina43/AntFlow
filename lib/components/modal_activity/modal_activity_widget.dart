@@ -98,7 +98,7 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                         child: SelectionArea(
                             child: Text(
                           FFLocalizations.of(context).getText(
-                            '2issmdet' /* Notifications */,
+                            'g8n75qfd' /* Notifications */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
@@ -621,7 +621,7 @@ class _ModalActivityWidgetState extends State<ModalActivityWidget> {
                                                                             child: AutoSizeText(
                                                                           FFLocalizations.of(context)
                                                                               .getText(
-                                                                            '4z8dhmym' /* Project: */,
+                                                                            'xddmuioh' /* Project: */,
                                                                           ),
                                                                           textAlign:
                                                                               TextAlign.start,

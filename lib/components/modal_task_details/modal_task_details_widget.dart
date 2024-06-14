@@ -667,7 +667,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                             text: FFLocalizations
                                                                     .of(context)
                                                                 .getText(
-                                                              'zerfwzgz' /* Mark as Complete */,
+                                                              '60d7bmkn' /* Mark as Complete */,
                                                             ),
                                                             options:
                                                                 FFButtonOptions(
@@ -919,7 +919,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                                             text: FFLocalizations
                                                                     .of(context)
                                                                 .getText(
-                                                              'fki0wi86' /* Begin Task */,
+                                                              '6cjlcaxu' /* Begin Task */,
                                                             ),
                                                             options:
                                                                 FFButtonOptions(
@@ -1156,7 +1156,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                               child: Text(
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                                  'pj3j661s' /* Due */,
+                                                  'vvhpevfy' /* Due */,
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -1305,7 +1305,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'qwc3ia6n' /* ,  */,
+                                                '9onx1ch9' /* ,  */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -1372,7 +1372,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                             Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                '5bz5zdwp' /* Team Members */,
+                                                '0jviqdml' /* Team Members */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -1657,7 +1657,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                     children: [
                                       Text(
                                         FFLocalizations.of(context).getText(
-                                          'hc3gs7ga' /* Activity */,
+                                          '4b2i6hhe' /* Activity */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
@@ -1993,7 +1993,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                             hintText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              'ru97sguf' /* Leave update here... */,
+                                              'qxy1zirz' /* Leave update here... */,
                                             ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
@@ -2178,7 +2178,7 @@ class _ModalTaskDetailsWidgetState extends State<ModalTaskDetailsWidget>
                                         setState(() {});
                                       },
                                       text: FFLocalizations.of(context).getText(
-                                        '5xomb4rp' /* Submit */,
+                                        'e5aeph79' /* Submit */,
                                       ),
                                       options: FFButtonOptions(
                                         height: 40.0,

@@ -418,7 +418,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        '12tkp77z' /* Good morning */,
+                                        'c1qxdya3' /* Dashboard */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
@@ -479,7 +479,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                     ).then((value) => safeSetState(() {}));
                                   },
                                   text: FFLocalizations.of(context).getText(
-                                    'j0lx26qq' /* Create Task */,
+                                    '3r436ae2' /* Create Task */,
                                   ),
                                   icon: Icon(
                                     Icons.add_rounded,
@@ -561,25 +561,25 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                       Tab(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'qivbgraj' /* My Tasks */,
+                                          'jdl3506k' /* My Tasks */,
                                         ),
                                       ),
                                       Tab(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'iofpx15n' /* Not Started */,
+                                          'd2j80kse' /* Not Started */,
                                         ),
                                       ),
                                       Tab(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'wm00imuu' /* In Progress */,
+                                          '7e9dqfqq' /* In Progress */,
                                         ),
                                       ),
                                       Tab(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'lqbva4ak' /* Complete */,
+                                          'z7prh3m7' /* Complete */,
                                         ),
                                       ),
                                     ],
@@ -949,7 +949,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                       FFLocalizations.of(
                                                                               context)
                                                                           .getText(
-                                                                        'uwyvo6wk' /* Due */,
+                                                                        '5kxzrl0y' /* Due */,
                                                                       ),
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
@@ -1256,7 +1256,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                           Text(
                                                                         FFLocalizations.of(context)
                                                                             .getText(
-                                                                          '832adtr2' /* Start */,
+                                                                          'z74dbd2l' /* Start */,
                                                                         ),
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
@@ -1322,7 +1322,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                   FFLocalizations.of(
                                                                           context)
                                                                       .getText(
-                                                                    '1460lgka' /* Due */,
+                                                                    'jdlbtk11' /* Due */,
                                                                   ),
                                                                   style: FlutterFlowTheme.of(
                                                                           context)
@@ -1681,7 +1681,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                       Text(
                                                                         FFLocalizations.of(context)
                                                                             .getText(
-                                                                          'c8gv1fmj' /* Due */,
+                                                                          'jjg57xms' /* Due */,
                                                                         ),
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
@@ -1995,7 +1995,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                           child:
                                                                               Text(
                                                                             FFLocalizations.of(context).getText(
-                                                                              'hkcnmvtg' /* Complete */,
+                                                                              'wucfb81x' /* Complete */,
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -2051,7 +2051,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                       Text(
                                                                         FFLocalizations.of(context)
                                                                             .getText(
-                                                                          'htuk5fl0' /* Due */,
+                                                                          'hmbjinl1' /* Due */,
                                                                         ),
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
@@ -2206,7 +2206,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                   Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'xe34smbh' /* My Tasks */,
+                                                      'gt3i6vre' /* My Tasks */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -2228,7 +2228,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                   Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      '1rnio8vt' /* (4) */,
+                                                      '0ap24imz' /* (4) */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -2495,7 +2495,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                                       children: [
                                                                                         Text(
                                                                                           FFLocalizations.of(context).getText(
-                                                                                            'oopnhfx6' /* Due */,
+                                                                                            'um26zdq2' /* Due */,
                                                                                           ),
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -2606,7 +2606,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'rktf6kep' /* Not Started */,
+                                                    'a8dvaipa' /* Not Started */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -2889,7 +2889,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                                     padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                                                                                     child: Text(
                                                                                       FFLocalizations.of(context).getText(
-                                                                                        'mpiabjfr' /* Start */,
+                                                                                        'e922rfdn' /* Start */,
                                                                                       ),
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                             fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -2935,7 +2935,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                             children: [
                                                                               Text(
                                                                                 FFLocalizations.of(context).getText(
-                                                                                  'i1j0llq5' /* Due */,
+                                                                                  '8v08ly9a' /* Due */,
                                                                                 ),
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -3030,7 +3030,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    '89oepmke' /* In Progress */,
+                                                    'z282r5c8' /* In Progress */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -3324,7 +3324,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                             children: [
                                                                               Text(
                                                                                 FFLocalizations.of(context).getText(
-                                                                                  'b8974iek' /* Due */,
+                                                                                  'neyxlkmi' /* Due */,
                                                                                 ),
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -3432,7 +3432,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    '310ik08p' /* Completed */,
+                                                    '2gtfroxg' /* Completed */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)

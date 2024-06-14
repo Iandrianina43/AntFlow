@@ -228,7 +228,7 @@ class _TaskComponentWidgetState extends State<TaskComponentWidget>
                       children: [
                         Text(
                           FFLocalizations.of(context).getText(
-                            'uuuaezib' /* Completed */,
+                            'sivbddzo' /* Completed */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium

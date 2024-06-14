@@ -68,7 +68,7 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
               automaticallyImplyLeading: false,
               title: Text(
                 FFLocalizations.of(context).getText(
-                  'dzbojo7r' /* Invite User */,
+                  'suwf7ulx' /* Invite User */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily:
@@ -252,7 +252,7 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        '5ilq7vbh' /* Full Name */,
+                                        'yxrotcmk' /* Full Name */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodySmall
@@ -335,7 +335,7 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        '733r7kk8' /* Email */,
+                                        'vygdbm69' /* Email */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodySmall
@@ -418,7 +418,7 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        '64z5ta3b' /* Title or Role */,
+                                        '6k2ab5w0' /* Title or Role */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodySmall
@@ -499,13 +499,13 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                             FormFieldController<String>(null),
                                     options: [
                                       FFLocalizations.of(context).getText(
-                                        '39qfddvg' /* Team 1 */,
+                                        '32dmyve3' /* Team 1 */,
                                       ),
                                       FFLocalizations.of(context).getText(
-                                        '0rrub9lg' /* Team 2 */,
+                                        '01901xti' /* Team 2 */,
                                       ),
                                       FFLocalizations.of(context).getText(
-                                        '23fglgb8' /* Team 3 */,
+                                        'z0f1h62m' /* Team 3 */,
                                       )
                                     ],
                                     onChanged: (val) => setState(
@@ -526,7 +526,7 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                         ),
                                     hintText:
                                         FFLocalizations.of(context).getText(
-                                      'd6ul4ero' /* Select Team */,
+                                      'iwtz644e' /* Select Team */,
                                     ),
                                     icon: Icon(
                                       Icons.keyboard_arrow_down_rounded,
@@ -558,7 +558,7 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                     decoration: InputDecoration(
                                       hintText:
                                           FFLocalizations.of(context).getText(
-                                        'oehnkpb9' /* Enter description here.. */,
+                                        '4w07g5md' /* Enter description here.. */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodySmall
@@ -684,7 +684,7 @@ class _AddTeamMembersWidgetState extends State<AddTeamMembersWidget> {
                                 context.pop();
                               },
                               text: FFLocalizations.of(context).getText(
-                                'c38hkcs1' /* Create & Invite User */,
+                                '3nvs6sds' /* Create & Invite User */,
                               ),
                               options: FFButtonOptions(
                                 width: 270.0,

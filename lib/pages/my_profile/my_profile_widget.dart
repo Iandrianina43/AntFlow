@@ -388,7 +388,7 @@ class _MyProfileWidgetState extends State<MyProfileWidget>
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        '5n51xmhd' /* Switch to Dark Mode */,
+                                                        'qqi5z7oe' /* Switch to Dark Mode */,
                                                       ),
                                                       style:
                                                           FlutterFlowTheme.of(
@@ -553,7 +553,7 @@ class _MyProfileWidgetState extends State<MyProfileWidget>
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        'w3vpe9rl' /* Switch to Light Mode */,
+                                                        'vnltbvcs' /* Switch to Light Mode */,
                                                       ),
                                                       style:
                                                           FlutterFlowTheme.of(
@@ -672,7 +672,7 @@ class _MyProfileWidgetState extends State<MyProfileWidget>
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                '05v307ij' /* Account Settings */,
+                                                'djrg60ro' /* Account Settings */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -745,7 +745,7 @@ class _MyProfileWidgetState extends State<MyProfileWidget>
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        'o1pcrlaz' /* Change Password */,
+                                                        'w9jz25xv' /* Change Password */,
                                                       ),
                                                       style:
                                                           FlutterFlowTheme.of(
@@ -832,7 +832,7 @@ class _MyProfileWidgetState extends State<MyProfileWidget>
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        'alhgf413' /* Edit Profile */,
+                                                        'f9c1n9qo' /* Edit Profile */,
                                                       ),
                                                       style:
                                                           FlutterFlowTheme.of(
@@ -894,7 +894,7 @@ class _MyProfileWidgetState extends State<MyProfileWidget>
                                               },
                                               text: FFLocalizations.of(context)
                                                   .getText(
-                                                'w4vsr6hu' /* Log Out */,
+                                                '9ioazwbz' /* Log Out */,
                                               ),
                                               options: FFButtonOptions(
                                                 width: 192.0,

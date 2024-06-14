@@ -60,7 +60,7 @@ class _WebNavWidgetState extends State<WebNavWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 250.0,
+      width: 300.0,
       height: double.infinity,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -92,9 +92,10 @@ class _WebNavWidgetState extends State<WebNavWidget> {
                       Theme.of(context).brightness == Brightness.dark
                           ? 'assets/images/logo_tasks_DarkMode@3x.png'
                           : 'assets/images/vnimc_1.png',
-                      width: 130.0,
-                      height: 79.0,
-                      fit: BoxFit.fitWidth,
+                      width: 232.0,
+                      height: 210.0,
+                      fit: BoxFit.cover,
+                      alignment: Alignment(0.0, 0.0),
                     ),
                   ),
                 ],
@@ -139,11 +140,8 @@ class _WebNavWidgetState extends State<WebNavWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            FFLocalizations.of(context).getVariableText(
-                              enText: 'My Tracker',
-                              hiText: '',
-                              taText: '',
-                              urText: '',
+                            FFLocalizations.of(context).getText(
+                              'ejq9ngok' /* Tracker */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodySmall
@@ -204,11 +202,8 @@ class _WebNavWidgetState extends State<WebNavWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            FFLocalizations.of(context).getVariableText(
-                              enText: 'Projects',
-                              hiText: '',
-                              taText: '',
-                              urText: '',
+                            FFLocalizations.of(context).getText(
+                              'sf7j88cj' /* Projects */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodySmall
@@ -251,7 +246,7 @@ class _WebNavWidgetState extends State<WebNavWidget> {
                             alignment: AlignmentDirectional(0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'nf1dqsbp' /* 3 */,
+                                'sp6916kl' /* 3 */,
                               ),
                               textAlign: TextAlign.center,
                               style: FlutterFlowTheme.of(context)
@@ -314,11 +309,8 @@ class _WebNavWidgetState extends State<WebNavWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            FFLocalizations.of(context).getVariableText(
-                              enText: 'My Team',
-                              hiText: '',
-                              taText: '',
-                              urText: '',
+                            FFLocalizations.of(context).getText(
+                              'cgkc0jyt' /* Team Members */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodySmall
@@ -384,11 +376,8 @@ class _WebNavWidgetState extends State<WebNavWidget> {
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
-                                FFLocalizations.of(context).getVariableText(
-                                  enText: 'My Organization',
-                                  hiText: '',
-                                  taText: '',
-                                  urText: '',
+                                FFLocalizations.of(context).getText(
+                                  'usxg96la' /* Team Members */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodySmall

@@ -118,7 +118,7 @@ class _ModalAddMembersWidgetState extends State<ModalAddMembersWidget> {
                             EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 24.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'qgce8yzt' /* Add Members to project */,
+                            'g7weubso' /* Add Members to project */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
@@ -146,7 +146,7 @@ class _ModalAddMembersWidgetState extends State<ModalAddMembersWidget> {
                               16.0, 0.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'ncylrws1' /* Members in Project */,
+                              '13tf8xms' /* Members in Project */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodySmall
@@ -406,7 +406,7 @@ class _ModalAddMembersWidgetState extends State<ModalAddMembersWidget> {
                                                   text: FFLocalizations.of(
                                                           context)
                                                       .getText(
-                                                    'ddkg34qk' /* Remove */,
+                                                    'v4qbfvpn' /* Remove */,
                                                   ),
                                                   options: FFButtonOptions(
                                                     width: 130.0,
@@ -468,7 +468,7 @@ class _ModalAddMembersWidgetState extends State<ModalAddMembersWidget> {
                               16.0, 0.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'rxgjnrtl' /* Add Members */,
+                              'djp0jjxt' /* Add Members */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodySmall
@@ -803,7 +803,7 @@ class _ModalAddMembersWidgetState extends State<ModalAddMembersWidget> {
                                                   text: FFLocalizations.of(
                                                           context)
                                                       .getText(
-                                                    'c69xi1a4' /* Assign */,
+                                                    'ay6uchzn' /* Assign */,
                                                   ),
                                                   options: FFButtonOptions(
                                                     width: 80.0,

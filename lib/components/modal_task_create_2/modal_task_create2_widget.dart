@@ -318,7 +318,7 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        'fkb8cli1' /* Task Name */,
+                                        'kh10ruu8' /* Task Name */,
                                       ),
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .headlineSmall
@@ -401,7 +401,7 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                     decoration: InputDecoration(
                                       hintText:
                                           FFLocalizations.of(context).getText(
-                                        '5qwd78rp' /* Enter description here... */,
+                                        'wm2k8we7' /* Enter description here... */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodySmall
@@ -481,13 +481,13 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                             FormFieldController<String>(null),
                                     options: [
                                       FFLocalizations.of(context).getText(
-                                        'o1qo2qg3' /* Not Started */,
+                                        '973t9zby' /* Not Started */,
                                       ),
                                       FFLocalizations.of(context).getText(
-                                        '3xt3njp6' /* In Progress */,
+                                        'h6sbabuq' /* In Progress */,
                                       ),
                                       FFLocalizations.of(context).getText(
-                                        'u0g3xflr' /* Complete */,
+                                        'g5tvhiqo' /* Complete */,
                                       )
                                     ],
                                     onChanged: (val) => setState(
@@ -508,7 +508,7 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                         ),
                                     hintText:
                                         FFLocalizations.of(context).getText(
-                                      'c2dtsnbb' /* Select Status */,
+                                      'eb9slo6n' /* Select Status */,
                                     ),
                                     icon: Icon(
                                       Icons.keyboard_arrow_down_rounded,
@@ -884,7 +884,7 @@ class _ModalTaskCreate2WidgetState extends State<ModalTaskCreate2Widget>
                                   setState(() {});
                                 },
                                 text: FFLocalizations.of(context).getText(
-                                  'udw09bms' /* Create Task */,
+                                  'n8wkz77p' /* Create Task */,
                                 ),
                                 options: FFButtonOptions(
                                   width: 270.0,

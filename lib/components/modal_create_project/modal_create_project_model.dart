@@ -40,7 +40,7 @@ class ModalCreateProjectModel
       BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
-        'zzv8enkj' /* Please enter a project name. */,
+        'rxy1hzw9' /* Please enter a project name. */,
       );
     }
 
@@ -59,7 +59,7 @@ class ModalCreateProjectModel
       BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
-        'e68qg04m' /* Please enter a short descripti... */,
+        '3hfkufri' /* Please enter a short descripti... */,
       );
     }
 

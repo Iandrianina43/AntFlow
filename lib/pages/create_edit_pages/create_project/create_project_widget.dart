@@ -61,7 +61,7 @@ class _CreateProjectWidgetState extends State<CreateProjectWidget> {
               automaticallyImplyLeading: false,
               title: Text(
                 FFLocalizations.of(context).getText(
-                  'zhq7wtzw' /* Create Project */,
+                  'eico9jlb' /* Create Project */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily:
@@ -128,7 +128,7 @@ class _CreateProjectWidgetState extends State<CreateProjectWidget> {
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        '9duf9kbf' /* Project Name */,
+                                        '03zfnuph' /* Project Name */,
                                       ),
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .headlineSmall
@@ -206,7 +206,7 @@ class _CreateProjectWidgetState extends State<CreateProjectWidget> {
                                     decoration: InputDecoration(
                                       hintText:
                                           FFLocalizations.of(context).getText(
-                                        'j3scp78v' /* Enter description here... */,
+                                        '20jzfsvr' /* Enter description here... */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodySmall
@@ -331,7 +331,7 @@ class _CreateProjectWidgetState extends State<CreateProjectWidget> {
                                     context.pop();
                                   },
                                   text: FFLocalizations.of(context).getText(
-                                    'gql7sgl9' /* Create Project */,
+                                    'xd6ci26k' /* Create Project */,
                                   ),
                                   options: FFButtonOptions(
                                     width: 270.0,

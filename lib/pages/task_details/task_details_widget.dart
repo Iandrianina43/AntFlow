@@ -501,7 +501,7 @@ class _TaskDetailsWidgetState extends State<TaskDetailsWidget>
                                       Expanded(
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            'hb364kq4' /* Due */,
+                                            'mziw6hrx' /* Due */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
@@ -701,7 +701,7 @@ class _TaskDetailsWidgetState extends State<TaskDetailsWidget>
                                     children: [
                                       Text(
                                         FFLocalizations.of(context).getText(
-                                          'q4ikqgkd' /* Team Members */,
+                                          'ct9x0xhk' /* Team Members */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
@@ -816,7 +816,7 @@ class _TaskDetailsWidgetState extends State<TaskDetailsWidget>
                                           final proPlanUsersRecord =
                                               snapshot.data!;
                                           return Container(
-                                            width: 240.0,
+                                            width: 349.0,
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
@@ -948,7 +948,7 @@ class _TaskDetailsWidgetState extends State<TaskDetailsWidget>
                               children: [
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    'qrkfqya2' /* Notes & Activity */,
+                                    'rmqtfldi' /* Notes & Activity */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .labelMedium
@@ -1333,7 +1333,7 @@ class _TaskDetailsWidgetState extends State<TaskDetailsWidget>
                                         );
                                       },
                                       text: FFLocalizations.of(context).getText(
-                                        '46h6mjof' /* Mark as Complete */,
+                                        '44malkle' /* Mark as Complete */,
                                       ),
                                       options: FFButtonOptions(
                                         width: 270.0,
@@ -1435,7 +1435,7 @@ class _TaskDetailsWidgetState extends State<TaskDetailsWidget>
                                         );
                                       },
                                       text: FFLocalizations.of(context).getText(
-                                        'xvvip759' /* Begin Task */,
+                                        'vl73t8fn' /* Begin Task */,
                                       ),
                                       options: FFButtonOptions(
                                         width: 270.0,

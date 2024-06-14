@@ -12,7 +12,7 @@ class FFLocalizations {
   static FFLocalizations of(BuildContext context) =>
       Localizations.of<FFLocalizations>(context, FFLocalizations)!;
 
-  static List<String> languages() => ['en', 'hi', 'ta', 'ur'];
+  static List<String> languages() => ['en', 'fr'];
 
   static late SharedPreferences _prefs;
   static Future initialize() async =>
@@ -38,11 +38,9 @@ class FFLocalizations {
 
   String getVariableText({
     String? enText = '',
-    String? hiText = '',
-    String? taText = '',
-    String? urText = '',
+    String? frText = '',
   }) =>
-      [enText, hiText, taText, urText][languageIndex] ?? '';
+      [enText, frText][languageIndex] ?? '';
 
   static const Set<String> _languagesWithShortCode = {
     'ar',
@@ -109,2261 +107,1513 @@ Locale createLocale(String language) => language.contains('_')
 final kTranslationsMap = <Map<String, Map<String, String>>>[
   // login
   {
-    'awn1ttmh': {
+    'qwvnac25': {
       'en': 'Enter your credentials to access your account.',
-      'hi': 'अपने खाते तक पहुँचने के लिए अपनी साख दर्ज करें।',
-      'ta': 'உங்கள் கணக்கை அணுக உங்கள் சான்றுகளை உள்ளிடவும்.',
-      'ur': 'اپنے اکاؤنٹ تک رسائی کے لیے اپنی اسناد درج کریں۔',
+      'fr': 'Entrez vos identifiants pour accéder à votre compte.',
     },
-    '7coe115q': {
+    'eno5jji0': {
       'en': 'Sign In',
-      'hi': 'दाखिल करना',
-      'ta': 'உள்நுழையவும்',
-      'ur': 'سائن ان',
+      'fr': 'Se connecter',
     },
-    'e9pnyzm9': {
+    'cqanau65': {
       'en': 'Email Address',
-      'hi': 'मेल पता',
-      'ta': 'மின்னஞ்சல் முகவரி',
-      'ur': 'ای میل اڈریس',
+      'fr': 'Adresse e-mail',
     },
-    'vuhwdlzn': {
+    'a81feh9p': {
       'en': '',
-      'hi': 'मेल पता',
-      'ta': 'மின்னஞ்சல் முகவரி',
-      'ur': 'ای میل اڈریس',
+      'fr': '',
     },
-    'z0v8ougp': {
+    'o3n4ic2o': {
       'en': 'Password',
-      'hi': 'पासवर्ड',
-      'ta': 'கடவுச்சொல்',
-      'ur': 'پاس ورڈ',
+      'fr': 'Mot de passe',
     },
-    '3mg9dzti': {
+    'hxmhbjp1': {
       'en': '',
-      'hi': 'पासवर्ड',
-      'ta': 'கடவுச்சொல்',
-      'ur': 'پاس ورڈ',
+      'fr': '',
     },
-    'd7zjcwes': {
+    't09i1513': {
       'en': 'Sign In',
-      'hi': 'दाखिल करना',
-      'ta': 'உள்நுழையவும்',
-      'ur': 'سائن ان',
+      'fr': 'Se connecter',
     },
-    'hhgceptf': {
+    'rpa7ge5c': {
       'en': 'Forgot Password?',
-      'hi': 'पासवर्ड भूल गए?',
-      'ta': 'கடவுச்சொல்லை மறந்துவிட்டீர்களா?',
-      'ur': 'پاسورڈ بھول گے؟',
+      'fr': 'Mot de passe oublié?',
     },
-    'mnrqbvlk': {
+    '1z611047': {
       'en': 'Sign Up',
-      'hi': 'साइन अप करें',
-      'ta': 'பதிவு செய்யவும்',
-      'ur': 'سائن اپ',
+      'fr': 'S\'inscrire',
     },
-    'ye7jjwdc': {
+    'hx1g7lry': {
       'en': 'Email Address',
-      'hi': 'मेल पता',
-      'ta': 'மின்னஞ்சல் முகவரி',
-      'ur': 'ای میل اڈریس',
+      'fr': 'Adresse e-mail',
     },
-    '4u8srye4': {
+    'emvwivhu': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
-    'y4q7638d': {
+    'ggcla6vd': {
       'en': 'Password',
-      'hi': 'पासवर्ड',
-      'ta': 'கடவுச்சொல்',
-      'ur': 'پاس ورڈ',
+      'fr': 'Mot de passe',
     },
-    '2b9s0vl5': {
+    'dbh7rhm5': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
-    'ffc8ingn': {
+    'wfpsv30y': {
       'en': 'Create Account',
-      'hi': 'खाता बनाएं',
-      'ta': 'உங்கள் கணக்கை துவங்குங்கள்',
-      'ur': 'اکاؤنٹ بنائیں',
+      'fr': 'Créer un compte',
     },
-    'tazfclws': {
+    '7vbr8i14': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    '64wzffab': {
+    'isystq8l': {
       'en': 'Email address should be minimum 5 characters',
-      'hi': 'ईमेल पता कम से कम 5 अक्षरों का होना चाहिए',
-      'ta': 'மின்னஞ்சல் முகவரி குறைந்தபட்சம் 5 எழுத்துகளாக இருக்க வேண்டும்',
-      'ur': 'ای میل ایڈریس کم از کم 5 حروف کا ہونا چاہیے۔',
+      'fr': 'L\'adresse e-mail doit comporter au minimum 5 caractères',
     },
-    'anmgh4rt': {
+    '0vvbu09f': {
       'en': 'email address is too long',
-      'hi': 'ईमेल पता बहुत लंबा है',
-      'ta': 'மின்னஞ்சல் முகவரி மிக நீளமாக உள்ளது',
-      'ur': 'ای میل ایڈریس بہت لمبا ہے۔',
+      'fr': 'l\'adresse email est trop longue',
     },
-    'niw2rp7x': {
+    'qop6wibf': {
       'en': 'Email seems to be invalid. Please check',
-      'hi': 'ईमेल अमान्य प्रतीत होता है। कृपया जांचें',
-      'ta': 'மின்னஞ்சல் தவறானது போல் தெரிகிறது. தயவுசெய்து சாிபார்க்கவும்',
-      'ur': 'ایسا لگتا ہے کہ ای میل غلط ہے۔ براہ مہربانی دیکھ لیجے',
+      'fr': 'L\'e-mail semble invalide. Vérifiez s\'il vous plaît',
     },
-    '0erhnun6': {
+    'rue6zvif': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'mw32hvo4': {
+    '37rryjnp': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'rklj8lg5': {
+    '8piv4jhh': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
   },
   // forgotPassword
   {
-    's20e49ou': {
+    'hxvbak62': {
       'en': 'Back',
-      'hi': 'पीछे',
-      'ta': 'மீண்டும்',
-      'ur': 'پیچھے',
+      'fr': 'Dos',
     },
-    '5slql49v': {
+    'l3ffx6ol': {
       'en': 'Back',
-      'hi': 'पीछे',
-      'ta': 'மீண்டும்',
-      'ur': 'پیچھے',
+      'fr': 'Dos',
     },
-    'qgfcbi0c': {
+    '8zwi85aj': {
       'en': 'Forgot Password',
-      'hi': 'पासवर्ड भूल गए',
-      'ta': 'கடவுச்சொல்லை மறந்துவிட்டீர்களா',
-      'ur': 'پاسورڈ بھول گے',
+      'fr': 'Mot de passe oublié',
     },
-    'fjhybvst': {
+    'htldi9x5': {
       'en':
           'We will send you an email with a link to reset your password, please enter the email associated with your account below.',
-      'hi':
-          'हम आपको आपका पासवर्ड रीसेट करने के लिए एक लिंक के साथ एक ईमेल भेजेंगे, कृपया नीचे अपने खाते से संबद्ध ईमेल दर्ज करें।',
-      'ta':
-          'உங்கள் கடவுச்சொல்லை மீட்டமைக்க இணைப்புடன் கூடிய மின்னஞ்சலை உங்களுக்கு அனுப்புவோம், உங்கள் கணக்குடன் தொடர்புடைய மின்னஞ்சலை கீழே உள்ளிடவும்.',
-      'ur':
-          'ہم آپ کو اپنا پاس ورڈ دوبارہ ترتیب دینے کے لیے ایک لنک کے ساتھ ایک ای میل بھیجیں گے، براہ کرم نیچے اپنے اکاؤنٹ سے وابستہ ای میل درج کریں۔',
+      'fr':
+          'Nous vous enverrons un e-mail avec un lien pour réinitialiser votre mot de passe, veuillez saisir l\'e-mail associé à votre compte ci-dessous.',
     },
-    'ujc5xipx': {
+    '4xr86erm': {
       'en': 'Email Addresss',
-      'hi': 'ईमेल पते',
-      'ta': 'மின்னஞ்சல் முகவரிகள்',
-      'ur': 'ای میل ایڈریسز',
+      'fr': 'Adresses e-mail',
     },
-    'gegzfze4': {
+    'x6a0tjhe': {
       'en': 'Enter your email...',
-      'hi': 'अपना ईमेल दर्ज करें...',
-      'ta': 'மின்னஞ்சலை பதிவுசெய்...',
-      'ur': 'اپنا ای میل درج کریں...',
+      'fr': 'Entrer votre Email...',
     },
-    '1njh17kf': {
+    '5nmgpcud': {
       'en': 'Send Link',
-      'hi': 'लिंक भेजें',
-      'ta': 'இணைப்பை அனுப்பவும்',
-      'ur': 'لنک بھیجیں۔',
+      'fr': 'Envoyer un lien',
     },
-    '9a4bm91z': {
+    'b7qwhofj': {
       'en': 'Home',
-      'hi': 'घर',
-      'ta': 'வீடு',
-      'ur': 'گھر',
+      'fr': 'Maison',
     },
   },
   // createProfile
   {
-    'vyqdl7s3': {
+    'u10qm9xc': {
       'en': 'Create Profile',
-      'hi': 'प्रोफ़ाइल बनाने',
-      'ta': 'சுயவிவரத்தை உருவாக்கவும்',
-      'ur': 'پروفائل بنائیں',
+      'fr': 'Créer un profil',
     },
-    'cnc5fmbk': {
+    'ym74n59b': {
       'en': 'Full Name',
-      'hi': 'पूरा नाम',
-      'ta': 'முழு பெயர்',
-      'ur': 'پورا نام',
+      'fr': 'Nom et prénom',
     },
-    'cjyo6ik7': {
+    'pb3kx2zr': {
       'en': 'Title or Role',
-      'hi': 'शीर्षक या भूमिका',
-      'ta': 'தலைப்பு அல்லது பாத்திரம்',
-      'ur': 'عنوان یا کردار',
+      'fr': 'Titre ou rôle',
     },
-    'h398jj2j': {
+    'l5thzdz7': {
       'en': 'Enter description here..',
-      'hi': 'यहां विवरण दर्ज करें..',
-      'ta': 'விளக்கத்தை இங்கே உள்ளிடவும்..',
-      'ur': 'یہاں تفصیل درج کریں..',
+      'fr': 'Entrez la description ici..',
     },
-    '7ve36dhv': {
+    'uh616rg5': {
       'en': 'Create & Invite User',
-      'hi': 'उपयोगकर्ता बनाएं और आमंत्रित करें',
-      'ta': 'பயனரை உருவாக்கி அழைக்கவும்',
-      'ur': 'صارف بنائیں اور مدعو کریں۔',
+      'fr': 'Créer et inviter un utilisateur',
     },
-    'nyguqlya': {
+    'afrmdqrj': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    '8opg51gj': {
+    'r4jjk1p5': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'ht71rkhg': {
+    '04dgho3r': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'bxrlgb5p': {
+    'ymmlv0wk': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
   },
   // Main_tracker
   {
-    '12tkp77z': {
-      'en': 'Good morning',
-      'hi': 'शुभ प्रभात',
-      'ta': 'காலை வணக்கம்',
-      'ur': 'صبح بخیر',
+    'c1qxdya3': {
+      'en': 'Dashboard',
+      'fr': 'Bonjour',
     },
-    'j0lx26qq': {
+    '3r436ae2': {
       'en': 'Create Task',
-      'hi': 'कार्य बनाएँ',
-      'ta': 'பணியை உருவாக்கவும்',
-      'ur': 'ٹاسک بنائیں',
+      'fr': 'Créer une tâche',
     },
-    'qivbgraj': {
+    'jdl3506k': {
       'en': 'My Tasks',
-      'hi': 'मेरा काम',
-      'ta': 'எனது பணிகள்',
-      'ur': 'میرے کام',
+      'fr': 'Mes tâches',
     },
-    'uwyvo6wk': {
+    '5kxzrl0y': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    'xeqma55c': {
+    'kxd2v1e0': {
       'en': 'Issue #242952592',
-      'hi': 'अंक #242952592',
-      'ta': 'வெளியீடு #242952592',
-      'ur': 'شمارہ نمبر 242952592',
+      'fr': 'Numéro 242952592',
     },
-    'jflxt2qx': {
+    '8lt6q1wk': {
       'en': 'In Progress',
-      'hi': 'चालू',
-      'ta': 'செயல்பாட்டில் உள்ளது',
-      'ur': 'کام جاری ہے',
+      'fr': 'En cours',
     },
-    'zi7hfryq': {
+    'wb92ilh9': {
       'en': 'Andres Reynolds',
-      'hi': 'एंड्रेस रेनॉल्ड्स',
-      'ta': 'ஆண்ட்ரெஸ் ரெனால்ட்ஸ்',
-      'ur': 'اینڈریس رینالڈز',
+      'fr': 'Andrés Reynolds',
     },
-    '8sjmfjjx': {
+    'qufgiwvr': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    'uiqmsymo': {
+    'ovtbeuj4': {
       'en': 'Tuesday, 10:00am',
-      'hi': 'मंगलवार, सुबह 10:00 बजे',
-      'ta': 'செவ்வாய், காலை 10:00 மணி',
-      'ur': 'منگل، صبح 10:00 بجے',
+      'fr': 'mardi, 10h00',
     },
-    'iofpx15n': {
+    'd2j80kse': {
       'en': 'Not Started',
-      'hi': 'शुरू नहीं',
-      'ta': 'துவங்கவில்லை',
-      'ur': 'شروع نہیں کیا',
+      'fr': 'Pas commencé',
     },
-    '832adtr2': {
+    'z74dbd2l': {
       'en': 'Start',
-      'hi': 'शुरू',
-      'ta': 'தொடங்கு',
-      'ur': 'شروع کریں۔',
+      'fr': 'Commencer',
     },
-    '1460lgka': {
+    'jdlbtk11': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    'wm00imuu': {
+    '7e9dqfqq': {
       'en': 'In Progress',
-      'hi': 'चालू',
-      'ta': 'செயல்பாட்டில் உள்ளது',
-      'ur': 'کام جاری ہے',
+      'fr': 'En cours',
     },
-    'c8gv1fmj': {
+    'jjg57xms': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    'd4gw9qw0': {
+    'j0oiwmp5': {
       'en': 'Issue #242952592',
-      'hi': 'अंक #242952592',
-      'ta': 'வெளியீடு #242952592',
-      'ur': 'شمارہ نمبر 242952592',
+      'fr': 'Numéro 242952592',
     },
-    'zdrf3ikg': {
+    '6o3lsajf': {
       'en': 'In Progress',
-      'hi': 'चालू',
-      'ta': 'செயல்பாட்டில் உள்ளது',
-      'ur': 'کام جاری ہے',
+      'fr': 'En cours',
     },
-    '6p1meot0': {
+    '01ha8j0f': {
       'en': 'Andres Reynolds',
-      'hi': 'एंड्रेस रेनॉल्ड्स',
-      'ta': 'ஆண்ட்ரெஸ் ரெனால்ட்ஸ்',
-      'ur': 'اینڈریس رینالڈز',
+      'fr': 'Andrés Reynolds',
     },
-    '86lis2jg': {
+    'y26xuhtz': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    'rd23line': {
+    'fwvgvs6j': {
       'en': 'Tuesday, 10:00am',
-      'hi': 'मंगलवार, सुबह 10:00 बजे',
-      'ta': 'செவ்வாய், காலை 10:00 மணி',
-      'ur': 'منگل، صبح 10:00 بجے',
+      'fr': 'mardi, 10h00',
     },
-    'lqbva4ak': {
+    'z7prh3m7': {
       'en': 'Complete',
-      'hi': 'पूरा',
-      'ta': 'முழுமை',
-      'ur': 'مکمل',
+      'fr': 'Complet',
     },
-    'hkcnmvtg': {
+    'wucfb81x': {
       'en': 'Complete',
-      'hi': 'पूरा',
-      'ta': 'முழுமை',
-      'ur': 'مکمل',
+      'fr': 'Complet',
     },
-    'htuk5fl0': {
+    'hmbjinl1': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    'xe34smbh': {
+    'gt3i6vre': {
       'en': 'My Tasks',
-      'hi': 'मेरा काम',
-      'ta': 'எனது பணிகள்',
-      'ur': 'میرے کام',
+      'fr': 'Mes tâches',
     },
-    '1rnio8vt': {
+    '0ap24imz': {
       'en': '(4)',
-      'hi': '(4)',
-      'ta': '(4)',
-      'ur': '(4)',
+      'fr': '(4)',
     },
-    'oopnhfx6': {
+    'um26zdq2': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    'i2oud4oy': {
+    'c2byz5t2': {
       'en': 'Issue #242952592',
-      'hi': 'अंक #242952592',
-      'ta': 'வெளியீடு #242952592',
-      'ur': 'شمارہ نمبر 242952592',
+      'fr': 'Numéro 242952592',
     },
-    '6z27sxtu': {
+    'ggk3pvhb': {
       'en': 'In Progress',
-      'hi': 'चालू',
-      'ta': 'செயல்பாட்டில் உள்ளது',
-      'ur': 'کام جاری ہے',
+      'fr': 'En cours',
     },
-    'kvvayf1a': {
+    'cncx7jin': {
       'en': 'Andres Reynolds',
-      'hi': 'एंड्रेस रेनॉल्ड्स',
-      'ta': 'ஆண்ட்ரெஸ் ரெனால்ட்ஸ்',
-      'ur': 'اینڈریس رینالڈز',
+      'fr': 'Andrés Reynolds',
     },
-    'y2umcbi9': {
+    'kphqfzdx': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    'ut18klg9': {
+    'su1h7291': {
       'en': 'Tuesday, 10:00am',
-      'hi': 'मंगलवार, सुबह 10:00 बजे',
-      'ta': 'செவ்வாய், காலை 10:00 மணி',
-      'ur': 'منگل، صبح 10:00 بجے',
+      'fr': 'mardi, 10h00',
     },
-    'rktf6kep': {
+    'a8dvaipa': {
       'en': 'Not Started',
-      'hi': 'शुरू नहीं',
-      'ta': 'துவங்கவில்லை',
-      'ur': 'شروع نہیں کیا',
+      'fr': 'Pas commencé',
     },
-    'mpiabjfr': {
+    'e922rfdn': {
       'en': 'Start',
-      'hi': 'शुरू',
-      'ta': 'தொடங்கு',
-      'ur': 'شروع کریں۔',
+      'fr': 'Commencer',
     },
-    'i1j0llq5': {
+    '8v08ly9a': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    '89oepmke': {
+    'z282r5c8': {
       'en': 'In Progress',
-      'hi': 'चालू',
-      'ta': 'செயல்பாட்டில் உள்ளது',
-      'ur': 'کام جاری ہے',
+      'fr': 'En cours',
     },
-    'b8974iek': {
+    'neyxlkmi': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    'vpfyakh9': {
+    'i8wfk1ux': {
       'en': 'Issue #242952592',
-      'hi': 'अंक #242952592',
-      'ta': 'வெளியீடு #242952592',
-      'ur': 'شمارہ نمبر 242952592',
+      'fr': 'Numéro 242952592',
     },
-    '2jc6nxa6': {
+    '5iihifce': {
       'en': 'In Progress',
-      'hi': 'चालू',
-      'ta': 'செயல்பாட்டில் உள்ளது',
-      'ur': 'کام جاری ہے',
+      'fr': 'En cours',
     },
-    'z98yqioc': {
+    '9uojrl5p': {
       'en': 'Andres Reynolds',
-      'hi': 'एंड्रेस रेनॉल्ड्स',
-      'ta': 'ஆண்ட்ரெஸ் ரெனால்ட்ஸ்',
-      'ur': 'اینڈریس رینالڈز',
+      'fr': 'Andrés Reynolds',
     },
-    '6c511ygf': {
+    '76g3ujku': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    'z9zv51n7': {
+    'jbghesji': {
       'en': 'Tuesday, 10:00am',
-      'hi': 'मंगलवार, सुबह 10:00 बजे',
-      'ta': 'செவ்வாய், காலை 10:00 மணி',
-      'ur': 'منگل، صبح 10:00 بجے',
+      'fr': 'mardi, 10h00',
     },
-    '310ik08p': {
+    '2gtfroxg': {
       'en': 'Completed',
-      'hi': 'पुरा होना।',
-      'ta': 'நிறைவு',
-      'ur': 'مکمل',
+      'fr': 'Complété',
     },
-    '6mv3j0ec': {
+    'dwywy7ca': {
       'en': 'Tracker',
-      'hi': 'ट्रैकर',
-      'ta': 'டிராக்கர்',
-      'ur': 'ٹریکر',
+      'fr': 'Traqueur',
     },
   },
   // createTask_1_SelectProject
   {
-    '1evyvanx': {
+    'f85b93hp': {
       'en': 'Create Task',
-      'hi': 'कार्य बनाएँ',
-      'ta': 'பணியை உருவாக்கவும்',
-      'ur': 'ٹاسک بنائیں',
+      'fr': 'Créer une tâche',
     },
-    '5p3w7kqb': {
+    'xrpl9hvp': {
       'en': 'Don\'t see your project? Add one here.',
-      'hi': 'आपका प्रोजेक्ट नहीं दिख रहा है? यहां एक जोड़ें।',
-      'ta': 'உங்கள் திட்டம் பார்க்கவில்லையா? ஒன்றை இங்கே சேர்க்கவும்.',
-      'ur': 'آپ کا پروجیکٹ نظر نہیں آرہا؟ یہاں ایک شامل کریں۔',
+      'fr': 'Vous ne voyez pas votre projet ? Ajoutez-en un ici.',
     },
-    'atun5agk': {
+    'qqgmosbw': {
       'en': 'Add Project',
-      'hi': 'प्रोजेक्ट जोड़ें',
-      'ta': 'திட்டத்தைச் சேர்க்கவும்',
-      'ur': 'پروجیکٹ شامل کریں۔',
+      'fr': 'Ajouter un projet',
     },
-    'nb0qs3fd': {
+    '1mum6ndw': {
       'en': 'Last edited:',
-      'hi': 'अंतिम संपादित:',
-      'ta': 'கடைசியாக திருத்தப்பட்டது:',
-      'ur': 'آخری ترمیم:',
+      'fr': 'Dernière modification :',
     },
-    'h0y2vck1': {
+    'm8ysqbkb': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'ry8gdxku': {
+    'av2mxnkv': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'xtzbonrg': {
+    's4v9wdh0': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'd3cize38': {
+    '2h7d3sa4': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
   },
   // createTask
   {
-    '5maeu8hf': {
+    '6xlyz7ip': {
       'en': 'Create Task',
-      'hi': 'कार्य बनाएँ',
-      'ta': 'பணியை உருவாக்கவும்',
-      'ur': 'ٹاسک بنائیں',
+      'fr': 'Créer une tâche',
     },
-    '1eztr6a4': {
+    'roszfzar': {
       'en': 'Task Name',
-      'hi': 'कार्य का नाम',
-      'ta': 'பணியின் பெயர்',
-      'ur': 'ٹاسک کا نام',
+      'fr': 'Nom de la tâche',
     },
-    'p0c23doi': {
+    'q5urswg7': {
       'en': 'Enter description here...',
-      'hi': 'यहां विवरण दर्ज करें...',
-      'ta': 'விளக்கத்தை இங்கே உள்ளிடவும்...',
-      'ur': 'یہاں تفصیل درج کریں...',
+      'fr': 'Entrez la description ici...',
     },
-    're4r1lkn': {
+    'r6ixpgb1': {
       'en': 'Not Started',
-      'hi': 'शुरू नहीं',
-      'ta': 'துவங்கவில்லை',
-      'ur': 'شروع نہیں کیا',
+      'fr': 'Pas commencé',
     },
-    'ptyt1h7n': {
+    'yhk1wcin': {
       'en': 'In Progress',
-      'hi': 'चालू',
-      'ta': 'செயல்பாட்டில் உள்ளது',
-      'ur': 'کام جاری ہے',
+      'fr': 'En cours',
     },
-    'gcvdijqn': {
+    'vmyuapjy': {
       'en': 'Complete',
-      'hi': 'पूरा',
-      'ta': 'முழுமை',
-      'ur': 'مکمل',
+      'fr': 'Complet',
     },
-    '9a99unmx': {
+    'mn12jc9y': {
       'en': 'Select Status',
-      'hi': 'स्थिति का चयन करें',
-      'ta': 'நிலையைத் தேர்ந்தெடுக்கவும்',
-      'ur': 'اسٹیٹس کو منتخب کریں۔',
+      'fr': 'Sélectionnez le statut',
     },
-    '0pml5dft': {
+    'w9fpc2yv': {
       'en': 'Create Task',
-      'hi': 'कार्य बनाएँ',
-      'ta': 'பணியை உருவாக்கவும்',
-      'ur': 'ٹاسک بنائیں',
+      'fr': 'Créer une tâche',
     },
-    '3nx43hj1': {
+    'a9ob4e0d': {
       'en': 'Please add a task name.',
-      'hi': 'कृपया कार्य का नाम जोड़ें।',
-      'ta': 'பணியின் பெயரைச் சேர்க்கவும்.',
-      'ur': 'براہ کرم ایک کام کا نام شامل کریں۔',
+      'fr': 'Veuillez ajouter un nom de tâche.',
     },
-    'tjxg3net': {
+    'zyaj8zh3': {
       'en': 'Please enter at least 3 letters.',
-      'hi': 'कृपया कम से कम 3 अक्षर दर्ज करें।',
-      'ta': 'குறைந்தது 3 எழுத்துக்களை உள்ளிடவும்.',
-      'ur': 'براہ کرم کم از کم 3 حروف درج کریں۔',
+      'fr': 'Veuillez saisir au moins 3 lettres.',
     },
-    '3khebw6t': {
+    'cnh6ti8v': {
       'en': 'Please choose an option from the dropdown',
-      'hi': 'कृपया ड्रॉपडाउन से एक विकल्प चुनें',
-      'ta': 'கீழ்தோன்றலில் இருந்து ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்',
-      'ur': 'براہ کرم ڈراپ ڈاؤن سے ایک آپشن منتخب کریں۔',
+      'fr': 'Veuillez choisir une option dans la liste déroulante',
     },
-    '45sp2bki': {
+    'cgmduzhe': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'cm4f3q0t': {
+    'i71iwd10': {
       'en': 'Please choose an option from the dropdown',
-      'hi': 'कृपया ड्रॉपडाउन से एक विकल्प चुनें',
-      'ta': 'கீழ்தோன்றலில் இருந்து ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்',
-      'ur': 'براہ کرم ڈراپ ڈاؤن سے ایک آپشن منتخب کریں۔',
+      'fr': 'Veuillez choisir une option dans la liste déroulante',
     },
   },
   // taskDetails
   {
-    'hb364kq4': {
+    'mziw6hrx': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    'q4ikqgkd': {
+    'ct9x0xhk': {
       'en': 'Team Members',
-      'hi': 'टीम के सदस्य',
-      'ta': 'குழு உறுப்பினர்கள்',
-      'ur': 'ٹیم کے افراد',
+      'fr': 'Membres de l\'équipe',
     },
-    'qrkfqya2': {
+    'rmqtfldi': {
       'en': 'Notes & Activity',
-      'hi': 'नोट्स और गतिविधि',
-      'ta': 'குறிப்புகள் & செயல்பாடு',
-      'ur': 'نوٹس اور سرگرمی',
+      'fr': 'Notes et activité',
     },
-    '46h6mjof': {
+    '44malkle': {
       'en': 'Mark as Complete',
-      'hi': 'पूर्ण के रूप में चिह्नित करें',
-      'ta': 'முழுமையானதாகக் குறிக்கவும்',
-      'ur': 'مکمل کے بطور نشان زد کریں۔',
+      'fr': 'Marquer comme terminé',
     },
-    'xvvip759': {
+    'vl73t8fn': {
       'en': 'Begin Task',
-      'hi': 'कार्य प्रारंभ करें',
-      'ta': 'பணியைத் தொடங்குங்கள்',
-      'ur': 'کام شروع کریں۔',
+      'fr': 'Commencer la tâche',
     },
-    'q5i02gt3': {
+    'dedxptmm': {
       'en': 'Home',
-      'hi': 'घर',
-      'ta': 'வீடு',
-      'ur': 'گھر',
+      'fr': 'Maison',
     },
   },
   // addTeamMembers
   {
-    'dzbojo7r': {
+    'suwf7ulx': {
       'en': 'Invite User',
-      'hi': 'उपयोगकर्ता को आमंत्रित करें',
-      'ta': 'பயனரை அழைக்கவும்',
-      'ur': 'صارف کو مدعو کریں۔',
+      'fr': 'Inviter un utilisateur',
     },
-    '5ilq7vbh': {
+    'yxrotcmk': {
       'en': 'Full Name',
-      'hi': 'पूरा नाम',
-      'ta': 'முழு பெயர்',
-      'ur': 'پورا نام',
+      'fr': 'Nom et prénom',
     },
-    '733r7kk8': {
+    'vygdbm69': {
       'en': 'Email',
-      'hi': 'ईमेल',
-      'ta': 'மின்னஞ்சல்',
-      'ur': 'ای میل',
+      'fr': 'E-mail',
     },
-    '64z5ta3b': {
+    '6k2ab5w0': {
       'en': 'Title or Role',
-      'hi': 'शीर्षक या भूमिका',
-      'ta': 'தலைப்பு அல்லது பாத்திரம்',
-      'ur': 'عنوان یا کردار',
+      'fr': 'Titre ou rôle',
     },
-    '39qfddvg': {
+    '32dmyve3': {
       'en': 'Team 1',
-      'hi': 'टीम 1',
-      'ta': 'அணி 1',
-      'ur': 'ٹیم 1',
+      'fr': 'Équipe 1',
     },
-    '0rrub9lg': {
+    '01901xti': {
       'en': 'Team 2',
-      'hi': 'टीम 2',
-      'ta': 'அணி 2',
-      'ur': 'ٹیم 2',
+      'fr': 'Équipe 2',
     },
-    '23fglgb8': {
+    'z0f1h62m': {
       'en': 'Team 3',
-      'hi': 'टीम 3',
-      'ta': 'அணி 3',
-      'ur': 'ٹیم 3',
+      'fr': 'Équipe 3',
     },
-    'd6ul4ero': {
+    'iwtz644e': {
       'en': 'Select Team',
-      'hi': 'टीम का चयन',
-      'ta': 'குழுவைத் தேர்ந்தெடுக்கவும்',
-      'ur': 'ٹیم منتخب کریں۔',
+      'fr': 'Choisis une équipe',
     },
-    'oehnkpb9': {
+    '4w07g5md': {
       'en': 'Enter description here..',
-      'hi': 'यहां विवरण दर्ज करें..',
-      'ta': 'விளக்கத்தை இங்கே உள்ளிடவும்..',
-      'ur': 'یہاں تفصیل درج کریں..',
+      'fr': 'Entrez la description ici..',
     },
-    'c38hkcs1': {
+    '3nvs6sds': {
       'en': 'Create & Invite User',
-      'hi': 'उपयोगकर्ता बनाएं और आमंत्रित करें',
-      'ta': 'பயனரை உருவாக்கி அழைக்கவும்',
-      'ur': 'صارف بنائیں اور مدعو کریں۔',
+      'fr': 'Créer et inviter un utilisateur',
     },
-    '41umybiv': {
+    'y51v7ocx': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'i5wagnfq': {
+    'hg6cv6or': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'h5euxn0m': {
+    'kdgu1oif': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'ag9dglwf': {
+    'gvat9zso': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
   },
   // teamMemberDetails
   {
-    'ukmpqe9t': {
-      'en': 'Team Name',
-      'hi': 'टीम का नाम',
-      'ta': 'குழு பெயர்',
-      'ur': 'گروہ کا نام',
-    },
-    'rq31lxfx': {
-      'en': ' - ',
-      'hi': '-',
-      'ta': '-',
-      'ur': '-',
-    },
-    '8lhfh12w': {
-      'en': '12 Tasks',
-      'hi': '12 कार्य',
-      'ta': '12 பணிகள்',
-      'ur': '12 کام',
-    },
-    'j2ieipip': {
+    'yhae4rja': {
       'en': 'Team Bio',
-      'hi': 'टीम बायो',
-      'ta': 'டீம் பயோ',
-      'ur': 'ٹیم بائیو',
+      'fr': 'Biographie de l\'équipe',
     },
-    '9s048496': {
+    'khsg4cbl': {
       'en': 'Tasks',
-      'hi': 'कार्य',
-      'ta': 'பணிகள்',
-      'ur': 'کام',
+      'fr': 'Tâches',
     },
-    '3rwjcoju': {
+    'a3ch1tw5': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    'znm2flgb': {
+    'ow74ie9d': {
       'en': 'Home',
-      'hi': 'घर',
-      'ta': 'வீடு',
-      'ur': 'گھر',
+      'fr': 'Maison',
     },
   },
   // Main_projectsWeb
   {
-    'qcd4z131': {
+    'd7aguiwl': {
       'en': 'Projects',
-      'hi': 'परियोजनाओं',
-      'ta': 'திட்டங்கள்',
-      'ur': 'پروجیکٹس',
+      'fr': 'Projets',
     },
-    '0e5jbrkh': {
+    '684745v9': {
       'en': 'A list of your projects below.',
-      'hi': 'नीचे अपनी परियोजनाओं की एक सूची।',
-      'ta': 'உங்கள் திட்டங்களின் பட்டியல் கீழே.',
-      'ur': 'ذیل میں آپ کے منصوبوں کی فہرست۔',
+      'fr': 'Une liste de vos projets ci-dessous.',
     },
-    '5mru78lw': {
+    'a7i21l37': {
       'en': 'Create Project',
-      'hi': 'प्रोजेक्ट बनाएं',
-      'ta': 'திட்டத்தை உருவாக்கவும்',
-      'ur': 'پروجیکٹ بنائیں',
+      'fr': 'Créer un projet',
     },
-    'hmxr55qt': {
+    'ay7vx0uv': {
       'en': 'Home',
-      'hi': 'घर',
-      'ta': 'வீடு',
-      'ur': 'گھر',
+      'fr': 'Maison',
     },
   },
   // Main_teamPage
   {
-    'vf4ee69k': {
+    'ebzkdd32': {
       'en': 'My Team',
-      'hi': 'मेरी टीम',
-      'ta': 'என் அணி',
-      'ur': 'میری ٹیم',
+      'fr': 'Mon équipe',
     },
-    'cqt7v5sb': {
+    '6hdhegux': {
       'en': 'My Team',
-      'hi': 'मेरी टीम',
-      'ta': 'என் அணி',
-      'ur': 'میری ٹیم',
+      'fr': 'Mon équipe',
     },
-    'mop2evm0': {
+    '0i6nxydx': {
       'en': 'Search members...',
-      'hi': 'सदस्यों को खोजें...',
-      'ta': 'உறுப்பினர்களைத் தேடு...',
-      'ur': 'اراکین کو تلاش کریں...',
+      'fr': 'Rechercher des membres...',
     },
-    '63wkxdr4': {
+    'qj1mz4sh': {
       'en': 'Find Members',
-      'hi': 'सदस्य खोजें',
-      'ta': 'உறுப்பினர்களைக் கண்டறியவும்',
-      'ur': 'ممبرز تلاش کریں۔',
+      'fr': 'Trouver des membres',
     },
-    'nyb9lczy': {
+    'wp42n8lb': {
       'en': 'Created on',
-      'hi': 'पर बनाया',
-      'ta': 'அன்று உருவாக்கப்பட்ட',
-      'ur': 'پر بنایا',
+      'fr': 'Créé sur',
     },
-    'h2tjjlou': {
+    'i2tjwysy': {
       'en': 'My Team',
-      'hi': 'मेरी टीम',
-      'ta': 'என் அணி',
-      'ur': 'میری ٹیم',
+      'fr': 'Mon équipe',
     },
   },
   // Main_projects
   {
-    '3drc3684': {
+    '2o9a9zhb': {
       'en': 'Home',
-      'hi': 'घर',
-      'ta': 'வீடு',
-      'ur': 'گھر',
+      'fr': 'Maison',
     },
   },
   // myProfile
   {
-    '5n51xmhd': {
+    'qqi5z7oe': {
       'en': 'Switch to Dark Mode',
-      'hi': 'डार्क मोड पर स्विच करें',
-      'ta': 'டார்க் பயன்முறைக்கு மாறவும்',
-      'ur': 'ڈارک موڈ پر سوئچ کریں۔',
+      'fr': 'Passer en mode sombre',
     },
-    'w3vpe9rl': {
+    'vnltbvcs': {
       'en': 'Switch to Light Mode',
-      'hi': 'लाइट मोड पर स्विच करें',
-      'ta': 'லைட் பயன்முறைக்கு மாறவும்',
-      'ur': 'لائٹ موڈ پر سوئچ کریں۔',
+      'fr': 'Passer en mode lumière',
     },
-    '05v307ij': {
+    'djrg60ro': {
       'en': 'Account Settings',
-      'hi': 'अकाउंट सेटिंग',
-      'ta': 'கணக்கு அமைப்புகள்',
-      'ur': 'اکاؤنٹ کی ترتیبات',
+      'fr': 'Paramètres du compte',
     },
-    'o1pcrlaz': {
+    'w9jz25xv': {
       'en': 'Change Password',
-      'hi': 'पासवर्ड बदलें',
-      'ta': 'கடவுச்சொல்லை மாற்று',
-      'ur': 'پاس ورڈ تبدیل کریں',
+      'fr': 'Changer le mot de passe',
     },
-    'alhgf413': {
+    'f9c1n9qo': {
       'en': 'Edit Profile',
-      'hi': 'प्रोफ़ाइल संपादित करें',
-      'ta': 'சுயவிவரத்தைத் திருத்து',
-      'ur': 'پروفائل میں ترمیم کریں',
+      'fr': 'Editer le profil',
     },
-    'w4vsr6hu': {
+    '9ioazwbz': {
       'en': 'Log Out',
-      'hi': 'लॉग आउट',
-      'ta': 'வெளியேறு',
-      'ur': 'لاگ آوٹ',
+      'fr': 'Se déconnecter',
     },
-    '3e1n01mf': {
+    'xvg8y0h1': {
       'en': 'Home',
-      'hi': 'घर',
-      'ta': 'வீடு',
-      'ur': 'گھر',
+      'fr': 'Maison',
     },
   },
   // createProject
   {
-    'zhq7wtzw': {
+    'eico9jlb': {
       'en': 'Create Project',
-      'hi': 'प्रोजेक्ट बनाएं',
-      'ta': 'திட்டத்தை உருவாக்கவும்',
-      'ur': 'پروجیکٹ بنائیں',
+      'fr': 'Créer un projet',
     },
-    '9duf9kbf': {
+    '03zfnuph': {
       'en': 'Project Name',
-      'hi': 'परियोजना का नाम',
-      'ta': 'திட்டத்தின் பெயர்',
-      'ur': 'پراجیکٹ کا نام',
+      'fr': 'nom du projet',
     },
-    'j3scp78v': {
+    '20jzfsvr': {
       'en': 'Enter description here...',
-      'hi': 'यहां विवरण दर्ज करें...',
-      'ta': 'விளக்கத்தை இங்கே உள்ளிடவும்...',
-      'ur': 'یہاں تفصیل درج کریں...',
+      'fr': 'Entrez la description ici...',
     },
-    'gql7sgl9': {
+    'xd6ci26k': {
       'en': 'Create Project',
-      'hi': 'प्रोजेक्ट बनाएं',
-      'ta': 'திட்டத்தை உருவாக்கவும்',
-      'ur': 'پروجیکٹ بنائیں',
+      'fr': 'Créer un projet',
     },
-    'abj4bb18': {
+    'fjmcu2kb': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'yyhmrk0i': {
+    'td8jzwik': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'yepouzyh': {
+    'sbcj9c6l': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'qckve3hq': {
+    '0xe8j0k2': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
   },
   // projectDetailsPage
   {
-    '03c7gtcz': {
+    '27l7y5jo': {
       'en': 'View All',
-      'hi': 'सभी को देखें',
-      'ta': 'அனைத்தையும் காட்டு',
-      'ur': 'سب دیکھیں',
+      'fr': 'Voir tout',
     },
-    'vdyl48dm': {
+    'hbvwoyp5': {
       'en': 'Completed Tasks',
-      'hi': 'पूर्ण कार्य',
-      'ta': 'முடிக்கப்பட்ட பணிகள்',
-      'ur': 'مکمل شدہ کام',
+      'fr': 'Tâches terminées',
     },
-    'f24x8bkt': {
+    'bwul9qxo': {
       'en': 'Number of Tasks',
-      'hi': 'कार्यों की संख्या',
-      'ta': 'பணிகளின் எண்ணிக்கை',
-      'ur': 'کاموں کی تعداد',
+      'fr': 'Nombre de tâches',
     },
-    '8i8307mb': {
+    'b7js3qj0': {
       'en': 'In Progress',
-      'hi': 'चालू',
-      'ta': 'செயல்பாட்டில் உள்ளது',
-      'ur': 'کام جاری ہے',
+      'fr': 'En cours',
     },
-    'mfp5v5yt': {
+    '93jlzw34': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    'x63goi6j': {
+    '8kjtoxx8': {
       'en': 'Issue #242952592',
-      'hi': 'अंक #242952592',
-      'ta': 'வெளியீடு #242952592',
-      'ur': 'شمارہ نمبر 242952592',
+      'fr': 'Numéro 242952592',
     },
-    '3ihf4pre': {
+    'nqvonzvt': {
       'en': 'In Progress',
-      'hi': 'चालू',
-      'ta': 'செயல்பாட்டில் உள்ளது',
-      'ur': 'کام جاری ہے',
+      'fr': 'En cours',
     },
-    'frnfsszo': {
+    '4u5mcl35': {
       'en': 'Andres Reynolds',
-      'hi': 'एंड्रेस रेनॉल्ड्स',
-      'ta': 'ஆண்ட்ரெஸ் ரெனால்ட்ஸ்',
-      'ur': 'اینڈریس رینالڈز',
+      'fr': 'Andrés Reynolds',
     },
-    'sg458n0n': {
+    'mbdn6xkt': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    '6hgcr887': {
+    'l4f2hvvr': {
       'en': 'Tuesday, 10:00am',
-      'hi': 'मंगलवार, सुबह 10:00 बजे',
-      'ta': 'செவ்வாய், காலை 10:00 மணி',
-      'ur': 'منگل، صبح 10:00 بجے',
+      'fr': 'mardi, 10h00',
     },
-    '1870f5uq': {
+    'bbosu6bh': {
       'en': 'Completed',
-      'hi': 'पुरा होना।',
-      'ta': 'நிறைவு',
-      'ur': 'مکمل',
+      'fr': 'Complété',
     },
-    'xo4dmszc': {
+    'vx59bduu': {
       'en': 'Complete',
-      'hi': 'पूरा',
-      'ta': 'முழுமை',
-      'ur': 'مکمل',
+      'fr': 'Complet',
     },
-    '24rs6kdw': {
+    'cibliqdj': {
       'en': 'Completed on',
-      'hi': 'पर पूर्ण',
-      'ta': 'அன்று நிறைவடைந்தது',
-      'ur': 'پر مکمل ہوا۔',
+      'fr': 'Terminé le',
     },
-    '4cmr54lc': {
+    's3410mg4': {
       'en': 'Activity',
-      'hi': 'गतिविधि',
-      'ta': 'செயல்பாடு',
-      'ur': 'سرگرمی',
+      'fr': 'Activité',
     },
-    'alg6xfua': {
+    'u74nb5eq': {
       'en': 'Current Time',
-      'hi': 'वर्तमान समय',
-      'ta': 'தற்போதைய நேரம்',
-      'ur': 'موجودہ وقت',
+      'fr': 'Heure actuelle',
     },
-    'y1upl145': {
+    '4yjrayhp': {
       'en': 'Back',
-      'hi': 'पीछे',
-      'ta': 'மீண்டும்',
-      'ur': 'پیچھے',
+      'fr': 'Dos',
     },
-    '5kom1132': {
+    'wa8b8lm1': {
       'en': 'Home',
-      'hi': 'घर',
-      'ta': 'வீடு',
-      'ur': 'گھر',
+      'fr': 'Maison',
     },
   },
   // searchMembers
   {
-    'i5eebch9': {
+    'r9ilya9c': {
       'en': 'Add Members',
-      'hi': 'सदस्यों को जोड़ें',
-      'ta': 'உறுப்பினர்களைச் சேர்க்கவும்',
-      'ur': 'ممبرز کو شامل کریں۔',
+      'fr': 'Ajouter des membres',
     },
-    'bn37syph': {
+    'q9q7yvdo': {
       'en': 'Search members...',
-      'hi': 'सदस्यों को खोजें...',
-      'ta': 'உறுப்பினர்களைத் தேடு...',
-      'ur': 'اراکین کو تلاش کریں...',
+      'fr': 'Rechercher des membres...',
     },
-    'ux02ixql': {
+    '1xy4hdeo': {
       'en': 'Search Memebers',
-      'hi': 'सदस्य खोजें',
-      'ta': 'உறுப்பினர்களைத் தேடுங்கள்',
-      'ur': 'ممبرز تلاش کریں۔',
+      'fr': 'Rechercher des membres',
     },
-    'kmiq19hs': {
+    'smwdet6x': {
       'en': 'Assign',
-      'hi': 'सौंपना',
-      'ta': 'ஒதுக்க',
-      'ur': 'تفویض',
+      'fr': 'Attribuer',
     },
-    'ag17xw1c': {
+    'ewyx52zp': {
       'en': 'Home',
-      'hi': 'घर',
-      'ta': 'வீடு',
-      'ur': 'گھر',
+      'fr': 'Maison',
     },
   },
   // editProfile
   {
-    'evdej962': {
+    '4d3ywbq0': {
       'en': 'Change Photo',
-      'hi': 'छवि बदलो',
-      'ta': 'புகைப்படத்தை மாற்று',
-      'ur': 'تصویر تبدیل کریں',
+      'fr': 'Changer la photo',
     },
-    't7tz85hw': {
+    'nzf1rcao': {
       'en': 'Your Name',
-      'hi': 'अप का नाम',
-      'ta': 'உங்கள் பெயர்',
-      'ur': 'تمھارا نام',
+      'fr': 'votre nom',
     },
-    'p7ef0qd8': {
+    'hbr9z9is': {
       'en': 'Title or Role',
-      'hi': 'शीर्षक या भूमिका',
-      'ta': 'தலைப்பு அல்லது பாத்திரம்',
-      'ur': 'عنوان یا کردار',
+      'fr': 'Titre ou rôle',
     },
-    'br3jvobf': {
+    'dpn0lo3j': {
       'en': 'Your bio',
-      'hi': 'आपका जैव',
-      'ta': 'உங்கள் சுயசரிதை',
-      'ur': 'آپ کا جیو',
+      'fr': 'Votre biographie',
     },
-    '5vmz78yy': {
+    'sk49y1qh': {
       'en': 'Email associated with this account:',
-      'hi': 'इस खाते से संबद्ध ईमेल:',
-      'ta': 'இந்தக் கணக்குடன் தொடர்புடைய மின்னஞ்சல்:',
-      'ur': 'اس اکاؤنٹ سے وابستہ ای میل:',
+      'fr': 'Email associé à ce compte :',
     },
-    '4cj4t3x4': {
+    '224did3m': {
       'en': 'Save Changes',
-      'hi': 'परिवर्तनों को सुरक्षित करें',
-      'ta': 'மாற்றங்களை சேமியுங்கள்',
-      'ur': 'تبدیلیاں محفوظ کرو',
+      'fr': 'Sauvegarder les modifications',
     },
-    'pt9elxe4': {
+    'k7pi6kw2': {
       'en': 'Edit Profile',
-      'hi': 'प्रोफ़ाइल संपादित करें',
-      'ta': 'சுயவிவரத்தைத் திருத்து',
-      'ur': 'پروفائل میں ترمیم کریں',
+      'fr': 'Editer le profil',
     },
   },
   // teamMembers
   {
-    'cr7ls6ar': {
+    'ryuvea9f': {
       'en': 'Add Members',
-      'hi': 'सदस्यों को जोड़ें',
-      'ta': 'உறுப்பினர்களைச் சேர்க்கவும்',
-      'ur': 'ممبرز کو شامل کریں۔',
+      'fr': 'Ajouter des membres',
     },
-    'gxfshi24': {
+    'fd92zyzh': {
       'en': 'Members in Project',
-      'hi': 'परियोजना में सदस्य',
-      'ta': 'திட்டத்தில் உறுப்பினர்கள்',
-      'ur': 'پروجیکٹ میں ممبران',
+      'fr': 'Membres du projet',
     },
-    'prexm7ph': {
+    'mejjwqjk': {
       'en': 'Remove',
-      'hi': 'निकालना',
-      'ta': 'அகற்று',
-      'ur': 'دور',
+      'fr': 'Retirer',
     },
-    'gjanmvum': {
+    '63ic1fnq': {
       'en': 'UserName',
-      'hi': 'उपयोगकर्ता नाम',
-      'ta': 'பயனர்பெயர்',
-      'ur': 'صارف کا نام',
+      'fr': 'Nom d\'utilisateur',
     },
-    '8dw4hlie': {
+    'qgzfhziv': {
       'en': 'Remove',
-      'hi': 'निकालना',
-      'ta': 'அகற்று',
-      'ur': 'دور',
+      'fr': 'Retirer',
     },
-    'eq219wh6': {
+    '3bpxqjgs': {
       'en': 'UserName',
-      'hi': 'उपयोगकर्ता नाम',
-      'ta': 'பயனர்பெயர்',
-      'ur': 'صارف کا نام',
+      'fr': 'Nom d\'utilisateur',
     },
-    'cjsbj4wg': {
+    'jgcnmem7': {
       'en': 'Remove',
-      'hi': 'निकालना',
-      'ta': 'அகற்று',
-      'ur': 'دور',
+      'fr': 'Retirer',
     },
-    '78fdfkdh': {
+    'sowwtsvq': {
       'en': 'Add Members',
-      'hi': 'सदस्यों को जोड़ें',
-      'ta': 'உறுப்பினர்களைச் சேர்க்கவும்',
-      'ur': 'ممبرز کو شامل کریں۔',
+      'fr': 'Ajouter des membres',
     },
-    'rzrf0zsp': {
+    '0ok0v50s': {
       'en': 'Assign',
-      'hi': 'सौंपना',
-      'ta': 'ஒதுக்க',
-      'ur': 'تفویض',
+      'fr': 'Attribuer',
     },
-    'aygq6hhd': {
+    '65pxldwf': {
       'en': 'user@domainname.com',
-      'hi': 'user@domainname.com',
-      'ta': 'user@domainame.com',
-      'ur': 'user@domainname.com',
+      'fr': 'utilisateur@nom de domaine.com',
     },
-    '70d3gp3g': {
+    'm9kt6uxu': {
       'en': 'View',
-      'hi': 'देखना',
-      'ta': 'காண்க',
-      'ur': 'دیکھیں',
+      'fr': 'Voir',
     },
-    'i5shsgmr': {
+    'guuh2xpo': {
       'en': 'Username',
-      'hi': 'उपयोगकर्ता नाम',
-      'ta': 'பயனர் பெயர்',
-      'ur': 'صارف نام',
+      'fr': 'Nom d\'utilisateur',
     },
-    '5uym93b4': {
+    'ugypxfpp': {
       'en': 'user@domainname.com',
-      'hi': 'user@domainname.com',
-      'ta': 'user@domainame.com',
-      'ur': 'user@domainname.com',
+      'fr': 'utilisateur@nom de domaine.com',
     },
-    '8ohfceuq': {
+    'dg9pkn40': {
       'en': 'View',
-      'hi': 'देखना',
-      'ta': 'காண்க',
-      'ur': 'دیکھیں',
+      'fr': 'Voir',
     },
-    'cf2slli6': {
+    'o12upobw': {
       'en': 'Username',
-      'hi': 'उपयोगकर्ता नाम',
-      'ta': 'பயனர் பெயர்',
-      'ur': 'صارف نام',
+      'fr': 'Nom d\'utilisateur',
     },
-    'dcpf109l': {
+    'aa053iut': {
       'en': 'user@domainname.com',
-      'hi': 'user@domainname.com',
-      'ta': 'user@domainame.com',
-      'ur': 'user@domainname.com',
+      'fr': 'utilisateur@nom de domaine.com',
     },
-    'ntjxiluh': {
+    'e0w36luv': {
       'en': 'View',
-      'hi': 'देखना',
-      'ta': 'காண்க',
-      'ur': 'دیکھیں',
+      'fr': 'Voir',
     },
-    '70m6fdii': {
+    '3igetaqg': {
       'en': 'user@domainname.com',
-      'hi': 'user@domainname.com',
-      'ta': 'user@domainame.com',
-      'ur': 'user@domainname.com',
+      'fr': 'utilisateur@nom de domaine.com',
     },
-    'vlair7ur': {
+    '1bw0vdj6': {
       'en': 'View',
-      'hi': 'देखना',
-      'ta': 'காண்க',
-      'ur': 'دیکھیں',
+      'fr': 'Voir',
     },
-    '76xe81xi': {
+    's6igz4en': {
       'en': 'Home',
-      'hi': 'घर',
-      'ta': 'வீடு',
-      'ur': 'گھر',
+      'fr': 'Maison',
     },
   },
   // editProject
   {
-    '7wmlszlo': {
+    'jq4uhlra': {
       'en': 'Edit Project',
-      'hi': 'प्रोजेक्ट संपादित करें',
-      'ta': 'திட்டத்தை திருத்து',
-      'ur': 'پروجیکٹ میں ترمیم کریں۔',
+      'fr': 'Modifier le projet',
     },
-    'wwzsnwbn': {
+    '9zmy4gf2': {
       'en': 'Project Name',
-      'hi': 'परियोजना का नाम',
-      'ta': 'திட்டத்தின் பெயர்',
-      'ur': 'پراجیکٹ کا نام',
+      'fr': 'nom du projet',
     },
-    'hyz5515g': {
+    'vvovb81m': {
       'en': 'Enter description here...',
-      'hi': 'यहां विवरण दर्ज करें...',
-      'ta': 'விளக்கத்தை இங்கே உள்ளிடவும்...',
-      'ur': 'یہاں تفصیل درج کریں...',
+      'fr': 'Entrez la description ici...',
     },
-    '57dpf0bb': {
+    'kv2q1duq': {
       'en': 'Save Changes',
-      'hi': 'परिवर्तनों को सुरक्षित करें',
-      'ta': 'மாற்றங்களை சேமியுங்கள்',
-      'ur': 'تبدیلیاں محفوظ کرو',
+      'fr': 'Sauvegarder les modifications',
     },
-    'lp17x1az': {
+    '2ogqedzz': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'ly4njc2q': {
+    '7mi6k17d': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'wqm2ux47': {
+    'v97b3f8d': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'cgdvh4bx': {
+    'jn3gy9p2': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
   },
   // drawerNav
   {
-    'j81no67g': {
+    'gnxpb2ai': {
       'en': 'View',
-      'hi': 'देखना',
-      'ta': 'காண்க',
-      'ur': 'دیکھیں',
+      'fr': 'Voir',
     },
-    '1281zly2': {
-      'en': '345',
-      'hi': '345',
-      'ta': '345',
-      'ur': '345',
-    },
-    'ikdzucnf': {
-      'en': 'Following',
-      'hi': 'अगले',
-      'ta': 'தொடர்ந்து',
-      'ur': 'درج ذیل',
-    },
-    '0mvvm3zs': {
-      'en': '345',
-      'hi': '345',
-      'ta': '345',
-      'ur': '345',
-    },
-    'ka33pk44': {
-      'en': 'Followers',
-      'hi': 'समर्थक',
-      'ta': 'பின்பற்றுபவர்கள்',
-      'ur': 'پیروکار',
-    },
-    'xnmol3vm': {
+    '8f8t2vli': {
       'en': 'Tracker',
-      'hi': 'ट्रैकर',
-      'ta': 'டிராக்கர்',
-      'ur': 'ٹریکر',
+      'fr': 'Traqueur',
     },
-    'tgp9100p': {
+    'an74qqfr': {
       'en': 'Projects',
-      'hi': 'परियोजनाओं',
-      'ta': 'திட்டங்கள்',
-      'ur': 'پروجیکٹس',
+      'fr': 'Projets',
     },
-    'gvsvhzns': {
+    '963xee2s': {
       'en': 'Team',
-      'hi': 'टीम',
-      'ta': 'குழு',
-      'ur': 'ٹیم',
+      'fr': 'Équipe',
     },
-    'r33amlko': {
+    'qajspfhy': {
       'en': 'About',
-      'hi': 'के बारे में',
-      'ta': 'பற்றி',
-      'ur': 'کے بارے میں',
+      'fr': 'À propos',
     },
-    'hfpu6vi1': {
-      'en': 'Rate App',
-      'hi': 'एप्प का मूल्यांकन',
-      'ta': 'பயன்பாட்டை மதிப்பிடவும்',
-      'ur': 'ایپ کی درجہ بندی کریں۔',
-    },
-    'of8ozb94': {
+    'xu1ntpz9': {
       'en': 'Log Out',
-      'hi': 'लॉग आउट',
-      'ta': 'வெளியேறு',
-      'ur': 'لاگ آوٹ',
+      'fr': 'Se déconnecter',
     },
   },
   // addTeam
   {
-    'uap9xd08': {
+    'vt3uv50f': {
       'en': 'Assign Member',
-      'hi': 'सदस्य नियुक्त करें',
-      'ta': 'உறுப்பினரை நியமிக்கவும்',
-      'ur': 'ممبر تفویض کریں۔',
+      'fr': 'Attribuer un membre',
     },
-    'v3df17c1': {
+    'abde9rd0': {
       'en': 'Find members by searching below to add them to this task.',
-      'hi': 'सदस्यों को इस कार्य में जोड़ने के लिए नीचे खोज कर उन्हें खोजें।',
-      'ta':
-          'இந்தப் பணியில் உறுப்பினர்களைச் சேர்க்க, கீழே தேடுவதன் மூலம் உறுப்பினர்களைக் கண்டறியவும்.',
-      'ur': 'ممبران کو اس کام میں شامل کرنے کے لیے نیچے تلاش کرکے تلاش کریں۔',
+      'fr':
+          'Trouvez des membres en recherchant ci-dessous pour les ajouter à cette tâche.',
     },
-    '4gubn0rd': {
+    'iv874nug': {
       'en': 'Search members...',
-      'hi': 'सदस्यों को खोजें...',
-      'ta': 'உறுப்பினர்களைத் தேடு...',
-      'ur': 'اراکین کو تلاش کریں...',
+      'fr': 'Rechercher des membres...',
     },
-    'k3vvd9ha': {
+    'st02dqz2': {
       'en': 'Assign',
-      'hi': 'सौंपना',
-      'ta': 'ஒதுக்க',
-      'ur': 'تفویض',
+      'fr': 'Attribuer',
     },
-    'gts4h2ob': {
+    'p75vssyl': {
       'en': 'user@domainname.com',
-      'hi': 'user@domainname.com',
-      'ta': 'user@domainame.com',
-      'ur': 'user@domainname.com',
+      'fr': 'utilisateur@nom de domaine.com',
     },
-    '5fcmvseb': {
+    'tdxwxubt': {
       'en': 'View',
-      'hi': 'देखना',
-      'ta': 'காண்க',
-      'ur': 'دیکھیں',
+      'fr': 'Voir',
     },
-    'ipj4b3o2': {
+    '70px8lqm': {
       'en': 'Username',
-      'hi': 'उपयोगकर्ता नाम',
-      'ta': 'பயனர் பெயர்',
-      'ur': 'صارف نام',
+      'fr': 'Nom d\'utilisateur',
     },
-    'hwbisz08': {
+    '65m6ok9u': {
       'en': 'user@domainname.com',
-      'hi': 'user@domainname.com',
-      'ta': 'user@domainame.com',
-      'ur': 'user@domainname.com',
+      'fr': 'utilisateur@nom de domaine.com',
     },
-    '3t1qpdde': {
+    'tbpcs9yt': {
       'en': 'View',
-      'hi': 'देखना',
-      'ta': 'காண்க',
-      'ur': 'دیکھیں',
+      'fr': 'Voir',
     },
-    'hpq0skds': {
+    '43aer1df': {
       'en': 'Username',
-      'hi': 'उपयोगकर्ता नाम',
-      'ta': 'பயனர் பெயர்',
-      'ur': 'صارف نام',
+      'fr': 'Nom d\'utilisateur',
     },
-    'zf4p0iqk': {
+    'xg5j0bll': {
       'en': 'user@domainname.com',
-      'hi': 'user@domainname.com',
-      'ta': 'user@domainame.com',
-      'ur': 'user@domainname.com',
+      'fr': 'utilisateur@nom de domaine.com',
     },
-    'gvttx09d': {
+    'wh4ez88i': {
       'en': 'View',
-      'hi': 'देखना',
-      'ta': 'காண்க',
-      'ur': 'دیکھیں',
+      'fr': 'Voir',
     },
-    'jy6ian12': {
+    'b88csebc': {
       'en': 'user@domainname.com',
-      'hi': 'user@domainname.com',
-      'ta': 'user@domainame.com',
-      'ur': 'user@domainname.com',
+      'fr': 'utilisateur@nom de domaine.com',
     },
-    'm88gl572': {
+    'j5p839jn': {
       'en': 'View',
-      'hi': 'देखना',
-      'ta': 'காண்க',
-      'ur': 'دیکھیں',
+      'fr': 'Voir',
     },
   },
   // createNote
   {
-    'i9im6f7s': {
+    'ckgzpqno': {
       'en': 'Create Note',
-      'hi': 'नोट बनाएँ',
-      'ta': 'குறிப்பை உருவாக்கவும்',
-      'ur': 'نوٹ بنائیں',
+      'fr': 'Créer une note',
     },
-    'y8jieyz4': {
+    'vwrwr1zv': {
       'en': 'Create a note to keep your team in the loop.',
-      'hi': 'अपनी टीम को लूप में रखने के लिए एक नोट बनाएं।',
-      'ta': 'உங்கள் குழுவை லூப்பில் வைத்திருக்க ஒரு குறிப்பை உருவாக்கவும்.',
-      'ur': 'اپنی ٹیم کو لوپ میں رکھنے کے لیے ایک نوٹ بنائیں۔',
+      'fr': 'Créez une note pour tenir votre équipe au courant.',
     },
-    'sq20csss': {
+    'ictixy2n': {
       'en': 'Enter your note here...',
-      'hi': 'अपना नोट यहां दर्ज करें...',
-      'ta': 'உங்கள் குறிப்பை இங்கே உள்ளிடவும்...',
-      'ur': 'اپنا نوٹ یہاں درج کریں...',
+      'fr': 'Entrez votre note ici...',
     },
-    'clj48a46': {
+    '5rej5r1z': {
       'en': 'Create Note',
-      'hi': 'नोट बनाएँ',
-      'ta': 'குறிப்பை உருவாக்கவும்',
-      'ur': 'نوٹ بنائیں',
+      'fr': 'Créer une note',
     },
   },
   // TaskComponent
   {
-    'uuuaezib': {
+    'sivbddzo': {
       'en': 'Completed',
-      'hi': 'पुरा होना।',
-      'ta': 'நிறைவு',
-      'ur': 'مکمل',
+      'fr': 'Complété',
     },
   },
   // WebNav
   {
-    'nf1dqsbp': {
+    'ejq9ngok': {
+      'en': 'Tracker',
+      'fr': '',
+    },
+    'sf7j88cj': {
+      'en': 'Projects',
+      'fr': '',
+    },
+    'sp6916kl': {
       'en': '3',
-      'hi': '3',
-      'ta': '3',
-      'ur': '3',
+      'fr': '3',
+    },
+    'cgkc0jyt': {
+      'en': 'Team Members',
+      'fr': '',
+    },
+    'usxg96la': {
+      'en': 'Team Members',
+      'fr': '',
     },
   },
   // changePhoto
   {
-    'rveosbw6': {
+    'rsuprvvk': {
       'en': 'Change Photo',
-      'hi': 'छवि बदलो',
-      'ta': 'புகைப்படத்தை மாற்று',
-      'ur': 'تصویر تبدیل کریں',
+      'fr': 'Changer la photo',
     },
-    'xkv4rj30': {
+    '52ofropw': {
       'en':
           'Upload a new photo below in order to change your avatar seen by others.',
-      'hi':
-          'दूसरों द्वारा देखे गए अपने अवतार को बदलने के लिए नीचे एक नया फोटो अपलोड करें।',
-      'ta':
-          'மற்றவர்கள் பார்க்கும் உங்கள் அவதாரத்தை மாற்ற, கீழே ஒரு புதிய புகைப்படத்தைப் பதிவேற்றவும்.',
-      'ur':
-          'دوسروں کے ذریعے نظر آنے والے اپنے اوتار کو تبدیل کرنے کے لیے نیچے ایک نئی تصویر اپ لوڈ کریں۔',
+      'fr':
+          'Téléchargez une nouvelle photo ci-dessous afin de changer votre avatar vu par les autres.',
     },
-    '9jqfzztm': {
+    'bc31m25z': {
       'en': 'Upload Image',
-      'hi': 'तस्विर अपलोड करना',
-      'ta': 'படத்தை பதிவேற்றம் செய்யவும்',
-      'ur': 'تصویر انٹرنیٹ پر ڈالنا',
+      'fr': 'Télécharger une image',
     },
-    'tnhsrx4j': {
+    'tralhz2q': {
       'en': 'Save Changes',
-      'hi': 'परिवर्तनों को सुरक्षित करें',
-      'ta': 'மாற்றங்களை சேமியுங்கள்',
-      'ur': 'تبدیلیاں محفوظ کرو',
+      'fr': 'Sauvegarder les modifications',
     },
   },
   // modal_Project
   {
-    '4r29z75b': {
+    'icksxvmc': {
       'en': 'View All',
-      'hi': 'सभी को देखें',
-      'ta': 'அனைத்தையும் காட்டு',
-      'ur': 'سب دیکھیں',
+      'fr': 'Voir tout',
     },
-    't5thu3gr': {
+    '1s96kgzw': {
       'en': 'Completed Tasks',
-      'hi': 'पूर्ण कार्य',
-      'ta': 'முடிக்கப்பட்ட பணிகள்',
-      'ur': 'مکمل شدہ کام',
+      'fr': 'Tâches terminées',
     },
-    'fycpdliq': {
+    'm9usbvt3': {
       'en': 'Number of Tasks',
-      'hi': 'कार्यों की संख्या',
-      'ta': 'பணிகளின் எண்ணிக்கை',
-      'ur': 'کاموں کی تعداد',
+      'fr': 'Nombre de tâches',
     },
-    't39dexai': {
+    'ct782g8n': {
       'en': 'In Progress',
-      'hi': 'चालू',
-      'ta': 'செயல்பாட்டில் உள்ளது',
-      'ur': 'کام جاری ہے',
+      'fr': 'En cours',
     },
-    'uu14cs8r': {
+    '0fpu4bmj': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    'ph74cymq': {
+    'agc6fdzl': {
       'en': 'Issue #242952592',
-      'hi': 'अंक #242952592',
-      'ta': 'வெளியீடு #242952592',
-      'ur': 'شمارہ نمبر 242952592',
+      'fr': 'Numéro 242952592',
     },
-    'fe9x22ad': {
+    'dhtms7nd': {
       'en': 'In Progress',
-      'hi': 'चालू',
-      'ta': 'செயல்பாட்டில் உள்ளது',
-      'ur': 'کام جاری ہے',
+      'fr': 'En cours',
     },
-    't725c9h5': {
+    'mjl2ilvv': {
       'en': 'Andres Reynolds',
-      'hi': 'एंड्रेस रेनॉल्ड्स',
-      'ta': 'ஆண்ட்ரெஸ் ரெனால்ட்ஸ்',
-      'ur': 'اینڈریس رینالڈز',
+      'fr': 'Andrés Reynolds',
     },
-    '2rn0rm7g': {
+    's6lse6np': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    '28tyqcfc': {
+    'd901uuva': {
       'en': 'Tuesday, 10:00am',
-      'hi': 'मंगलवार, सुबह 10:00 बजे',
-      'ta': 'செவ்வாய், காலை 10:00 மணி',
-      'ur': 'منگل، صبح 10:00 بجے',
+      'fr': 'mardi, 10h00',
     },
-    'gd3bhzsf': {
+    '4jxwjmaj': {
       'en': 'Completed',
-      'hi': 'पुरा होना।',
-      'ta': 'நிறைவு',
-      'ur': 'مکمل',
+      'fr': 'Complété',
     },
-    'y686s4b1': {
+    'n9ele8af': {
       'en': 'Complete',
-      'hi': 'पूरा',
-      'ta': 'முழுமை',
-      'ur': 'مکمل',
+      'fr': 'Complet',
     },
-    'lcgypwk6': {
+    'cda9gihy': {
       'en': 'Completed on',
-      'hi': 'पर पूर्ण',
-      'ta': 'அன்று நிறைவடைந்தது',
-      'ur': 'پر مکمل ہوا۔',
+      'fr': 'Terminé le',
     },
-    'dy7qxdlp': {
+    'ccj0qvxh': {
       'en': 'Activity',
-      'hi': 'गतिविधि',
-      'ta': 'செயல்பாடு',
-      'ur': 'سرگرمی',
+      'fr': 'Activité',
     },
-    '99rgc554': {
+    '4fznfxes': {
       'en': 'Current Time',
-      'hi': 'वर्तमान समय',
-      'ta': 'தற்போதைய நேரம்',
-      'ur': 'موجودہ وقت',
+      'fr': 'Heure actuelle',
     },
   },
   // modal_TaskDetails
   {
-    'zerfwzgz': {
+    '60d7bmkn': {
       'en': 'Mark as Complete',
-      'hi': 'पूर्ण के रूप में चिह्नित करें',
-      'ta': 'முழுமையானதாகக் குறிக்கவும்',
-      'ur': 'مکمل کے بطور نشان زد کریں۔',
+      'fr': 'Marquer comme terminé',
     },
-    'fki0wi86': {
+    '6cjlcaxu': {
       'en': 'Begin Task',
-      'hi': 'कार्य प्रारंभ करें',
-      'ta': 'பணியைத் தொடங்குங்கள்',
-      'ur': 'کام شروع کریں۔',
+      'fr': 'Commencer la tâche',
     },
-    'pj3j661s': {
+    'vvhpevfy': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
-    'qwc3ia6n': {
+    '9onx1ch9': {
       'en': ', ',
-      'hi': ',',
-      'ta': ',',
-      'ur': '،',
+      'fr': ',',
     },
-    '5bz5zdwp': {
+    '0jviqdml': {
       'en': 'Team Members',
-      'hi': 'टीम के सदस्य',
-      'ta': 'குழு உறுப்பினர்கள்',
-      'ur': 'ٹیم کے افراد',
+      'fr': 'Membres de l\'équipe',
     },
-    'hc3gs7ga': {
+    '4b2i6hhe': {
       'en': 'Activity',
-      'hi': 'गतिविधि',
-      'ta': 'செயல்பாடு',
-      'ur': 'سرگرمی',
+      'fr': 'Activité',
     },
-    'ru97sguf': {
+    'qxy1zirz': {
       'en': 'Leave update here...',
-      'hi': 'अपडेट यहां छोड़ें...',
-      'ta': 'புதுப்பிப்பை இங்கே விடுங்கள்...',
-      'ur': 'یہاں اپ ڈیٹ چھوڑیں...',
+      'fr': 'Laissez la mise à jour ici...',
     },
-    '5xomb4rp': {
+    'e5aeph79': {
       'en': 'Submit',
-      'hi': 'जमा करना',
-      'ta': 'சமர்ப்பிக்கவும்',
-      'ur': 'جمع کرائیں',
+      'fr': 'Soumettre',
     },
   },
   // modal_UserProfile
   {
-    'xbcjin31': {
-      'en': 'Team Name',
-      'hi': 'टीम का नाम',
-      'ta': 'குழு பெயர்',
-      'ur': 'گروہ کا نام',
-    },
-    's2rahhu0': {
-      'en': ' - ',
-      'hi': '-',
-      'ta': '-',
-      'ur': '-',
-    },
-    'f87wic4n': {
-      'en': '12 Tasks',
-      'hi': '12 कार्य',
-      'ta': '12 பணிகள்',
-      'ur': '12 کام',
-    },
-    '1r4s70n4': {
+    'n27jr1hg': {
       'en': 'Team Bio',
-      'hi': 'टीम बायो',
-      'ta': 'டீம் பயோ',
-      'ur': 'ٹیم بائیو',
+      'fr': 'Biographie de l\'équipe',
     },
-    'ai2tvk8r': {
+    'xf490hul': {
       'en': 'Tasks',
-      'hi': 'कार्य',
-      'ta': 'பணிகள்',
-      'ur': 'کام',
+      'fr': 'Tâches',
     },
-    'k2fas9o8': {
+    'y5t25owh': {
       'en': 'Due',
-      'hi': 'देय',
-      'ta': 'காரணமாக',
-      'ur': 'واجب الادا',
+      'fr': 'Exigible',
     },
   },
   // modal_TaskCreate_1
   {
-    'na5pbjsl': {
+    'k9o51k72': {
       'en': 'Choose Project',
-      'hi': 'प्रोजेक्ट चुनें',
-      'ta': 'திட்டத்தை தேர்வு செய்யவும்',
-      'ur': 'پروجیکٹ کا انتخاب کریں۔',
+      'fr': 'Choisir un projet',
     },
-    '7lc6cya0': {
+    'wga1c3sp': {
       'en': 'Don\'t see your project? Add one here.',
-      'hi': 'आपका प्रोजेक्ट नहीं दिख रहा है? यहां एक जोड़ें।',
-      'ta': 'உங்கள் திட்டம் பார்க்கவில்லையா? ஒன்றை இங்கே சேர்க்கவும்.',
-      'ur': 'آپ کا پروجیکٹ نظر نہیں آرہا؟ یہاں ایک شامل کریں۔',
+      'fr': 'Vous ne voyez pas votre projet ? Ajoutez-en un ici.',
     },
-    'wyow03qm': {
+    'nsxihmta': {
       'en': 'Add Project',
-      'hi': 'प्रोजेक्ट जोड़ें',
-      'ta': 'திட்டத்தைச் சேர்க்கவும்',
-      'ur': 'پروجیکٹ شامل کریں۔',
+      'fr': 'Ajouter un projet',
     },
-    '0advwx1u': {
+    '5dkwg5r0': {
       'en': 'Last edited:',
-      'hi': 'अंतिम संपादित:',
-      'ta': 'கடைசியாக திருத்தப்பட்டது:',
-      'ur': 'آخری ترمیم:',
+      'fr': 'Dernière modification :',
     },
-    'ksmhvpjh': {
+    '2fm4p66b': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    '2icxeqf5': {
+    'btzyzf3x': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'bthhoi83': {
+    '4f44s6pa': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    '9g6shlpz': {
+    'z8dw1hpi': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
   },
   // modal_CreateProject
   {
-    'd3zhz60s': {
+    'ivyuedf1': {
       'en': 'Create Project',
-      'hi': 'प्रोजेक्ट बनाएं',
-      'ta': 'திட்டத்தை உருவாக்கவும்',
-      'ur': 'پروجیکٹ بنائیں',
+      'fr': 'Créer un projet',
     },
-    'ndua9r0o': {
+    'dtxn6zzi': {
       'en': 'Please add the name & description below.',
-      'hi': 'कृपया नीचे नाम और विवरण जोड़ें।',
-      'ta': 'கீழே பெயரையும் விளக்கத்தையும் சேர்க்கவும்.',
-      'ur': 'براہ کرم ذیل میں نام اور تفصیل شامل کریں۔',
+      'fr': 'Veuillez ajouter le nom et la description ci-dessous.',
     },
-    'ijnwlsug': {
+    'pmrgulyt': {
       'en': 'Project Name',
-      'hi': 'परियोजना का नाम',
-      'ta': 'திட்டத்தின் பெயர்',
-      'ur': 'پراجیکٹ کا نام',
+      'fr': 'nom du projet',
     },
-    'l7qnilp2': {
+    'g8iltq8h': {
       'en': 'Enter description here...',
-      'hi': 'यहां विवरण दर्ज करें...',
-      'ta': 'விளக்கத்தை இங்கே உள்ளிடவும்...',
-      'ur': 'یہاں تفصیل درج کریں...',
+      'fr': 'Entrez la description ici...',
     },
-    'iou7k3x8': {
+    'bmy1p8ix': {
       'en': 'Assign Users',
-      'hi': 'उपयोगकर्ताओं को असाइन करें',
-      'ta': 'பயனர்களை ஒதுக்குங்கள்',
-      'ur': 'صارفین کو تفویض کریں۔',
+      'fr': 'Attribuer des utilisateurs',
     },
-    'h40v3y8u': {
+    'j4pesubl': {
       'en': 'Find members by searching below',
-      'hi': 'नीचे खोज कर सदस्यों को खोजें',
-      'ta': 'கீழே தேடுவதன் மூலம் உறுப்பினர்களைக் கண்டறியவும்',
-      'ur': 'ذیل میں تلاش کرکے اراکین کو تلاش کریں۔',
+      'fr': 'Trouvez des membres en effectuant une recherche ci-dessous',
     },
-    '74kovm7t': {
+    'oc24n01y': {
       'en': 'Assign',
-      'hi': 'सौंपना',
-      'ta': 'ஒதுக்க',
-      'ur': 'تفویض',
+      'fr': 'Attribuer',
     },
-    'p9mvmaob': {
+    'rs4m3qu7': {
       'en': 'Create Project',
-      'hi': 'प्रोजेक्ट बनाएं',
-      'ta': 'திட்டத்தை உருவாக்கவும்',
-      'ur': 'پروجیکٹ بنائیں',
+      'fr': 'Créer un projet',
     },
-    'zzv8enkj': {
+    'rxy1hzw9': {
       'en': 'Please enter a project name.',
-      'hi': 'कृपया एक परियोजना का नाम दर्ज करें।',
-      'ta': 'திட்டப் பெயரை உள்ளிடவும்.',
-      'ur': 'براہ کرم پروجیکٹ کا نام درج کریں۔',
+      'fr': 'Veuillez saisir un nom de projet.',
     },
-    '536ycszy': {
+    'l2w0uvkc': {
       'en': 'Please choose an option from the dropdown',
-      'hi': 'कृपया ड्रॉपडाउन से एक विकल्प चुनें',
-      'ta': 'கீழ்தோன்றலில் இருந்து ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்',
-      'ur': 'براہ کرم ڈراپ ڈاؤن سے ایک آپشن منتخب کریں۔',
+      'fr': 'Veuillez choisir une option dans la liste déroulante',
     },
-    'e68qg04m': {
+    '3hfkufri': {
       'en': 'Please enter a short description.',
-      'hi': 'कृपया संक्षिप्त विवरण दर्ज करें।',
-      'ta': 'தயவுசெய்து ஒரு சிறிய விளக்கத்தை உள்ளிடவும்.',
-      'ur': 'براہ کرم ایک مختصر تفصیل درج کریں۔',
+      'fr': 'Veuillez saisir une brève description.',
     },
-    'csybxpz6': {
+    'mtk7i9t7': {
       'en': 'Please choose an option from the dropdown',
-      'hi': 'कृपया ड्रॉपडाउन से एक विकल्प चुनें',
-      'ta': 'கீழ்தோன்றலில் இருந்து ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்',
-      'ur': 'براہ کرم ڈراپ ڈاؤن سے ایک آپشن منتخب کریں۔',
+      'fr': 'Veuillez choisir une option dans la liste déroulante',
     },
   },
   // modal_TaskCreate_2
   {
-    'fkb8cli1': {
+    'kh10ruu8': {
       'en': 'Task Name',
-      'hi': 'कार्य का नाम',
-      'ta': 'பணியின் பெயர்',
-      'ur': 'ٹاسک کا نام',
+      'fr': 'Nom de la tâche',
     },
-    '5qwd78rp': {
+    'wm2k8we7': {
       'en': 'Enter description here...',
-      'hi': 'यहां विवरण दर्ज करें...',
-      'ta': 'விளக்கத்தை இங்கே உள்ளிடவும்...',
-      'ur': 'یہاں تفصیل درج کریں...',
+      'fr': 'Entrez la description ici...',
     },
-    'o1qo2qg3': {
+    '973t9zby': {
       'en': 'Not Started',
-      'hi': 'शुरू नहीं',
-      'ta': 'துவங்கவில்லை',
-      'ur': 'شروع نہیں کیا',
+      'fr': 'Pas commencé',
     },
-    '3xt3njp6': {
+    'h6sbabuq': {
       'en': 'In Progress',
-      'hi': 'चालू',
-      'ta': 'செயல்பாட்டில் உள்ளது',
-      'ur': 'کام جاری ہے',
+      'fr': 'En cours',
     },
-    'u0g3xflr': {
+    'g5tvhiqo': {
       'en': 'Complete',
-      'hi': 'पूरा',
-      'ta': 'முழுமை',
-      'ur': 'مکمل',
+      'fr': 'Complet',
     },
-    'c2dtsnbb': {
+    'eb9slo6n': {
       'en': 'Select Status',
-      'hi': 'स्थिति का चयन करें',
-      'ta': 'நிலையைத் தேர்ந்தெடுக்கவும்',
-      'ur': 'اسٹیٹس کو منتخب کریں۔',
+      'fr': 'Sélectionnez le statut',
     },
-    'udw09bms': {
+    'n8wkz77p': {
       'en': 'Create Task',
-      'hi': 'कार्य बनाएँ',
-      'ta': 'பணியை உருவாக்கவும்',
-      'ur': 'ٹاسک بنائیں',
+      'fr': 'Créer une tâche',
     },
-    'dgd9bazz': {
+    'ul3a8lyi': {
       'en': 'Please add a task name.',
-      'hi': 'कृपया कार्य का नाम जोड़ें।',
-      'ta': 'பணியின் பெயரைச் சேர்க்கவும்.',
-      'ur': 'براہ کرم ایک کام کا نام شامل کریں۔',
+      'fr': 'Veuillez ajouter un nom de tâche.',
     },
-    '510sc51m': {
+    'lve3ry0a': {
       'en': 'Please enter at least 3 letters.',
-      'hi': 'कृपया कम से कम 3 अक्षर दर्ज करें।',
-      'ta': 'குறைந்தது 3 எழுத்துக்களை உள்ளிடவும்.',
-      'ur': 'براہ کرم کم از کم 3 حروف درج کریں۔',
+      'fr': 'Veuillez saisir au moins 3 lettres.',
     },
-    'grveqhde': {
+    'wpyenq7x': {
       'en': 'Please choose an option from the dropdown',
-      'hi': 'कृपया ड्रॉपडाउन से एक विकल्प चुनें',
-      'ta': 'கீழ்தோன்றலில் இருந்து ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்',
-      'ur': 'براہ کرم ڈراپ ڈاؤن سے ایک آپشن منتخب کریں۔',
+      'fr': 'Veuillez choisir une option dans la liste déroulante',
     },
-    'jid8c04u': {
+    'l9m3ge71': {
       'en': 'Field is required',
-      'hi': 'ये स्थान भरा जाना है',
-      'ta': 'இந்த பகுதி அவசியமானது',
-      'ur': 'فیلڈ کی ضرورت ہے',
+      'fr': 'Champ requis',
     },
-    'r242ro2z': {
+    'fpaeaf3d': {
       'en': 'Please choose an option from the dropdown',
-      'hi': 'कृपया ड्रॉपडाउन से एक विकल्प चुनें',
-      'ta': 'கீழ்தோன்றலில் இருந்து ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்',
-      'ur': 'براہ کرم ڈراپ ڈاؤن سے ایک آپشن منتخب کریں۔',
+      'fr': 'Veuillez choisir une option dans la liste déroulante',
     },
   },
   // modal_Activity
   {
-    '2issmdet': {
+    'g8n75qfd': {
       'en': 'Notifications',
-      'hi': 'सूचनाएं',
-      'ta': 'அறிவிப்புகள்',
-      'ur': 'اطلاعات',
+      'fr': 'Notifications',
     },
-    '4z8dhmym': {
+    'xddmuioh': {
       'en': 'Project:',
-      'hi': 'परियोजना:',
-      'ta': 'திட்டம்:',
-      'ur': 'پروجیکٹ:',
+      'fr': 'Projet:',
     },
   },
   // modal_addMembers
   {
-    'qgce8yzt': {
+    'g7weubso': {
       'en': 'Add Members to project',
-      'hi': 'प्रोजेक्ट में सदस्यों को जोड़ें',
-      'ta': 'திட்டத்தில் உறுப்பினர்களைச் சேர்க்கவும்',
-      'ur': 'ممبران کو پروجیکٹ میں شامل کریں۔',
+      'fr': 'Ajouter des membres au projet',
     },
-    'ncylrws1': {
+    '13tf8xms': {
       'en': 'Members in Project',
-      'hi': 'परियोजना में सदस्य',
-      'ta': 'திட்டத்தில் உறுப்பினர்கள்',
-      'ur': 'پروجیکٹ میں ممبران',
+      'fr': 'Membres du projet',
     },
-    'ddkg34qk': {
+    'v4qbfvpn': {
       'en': 'Remove',
-      'hi': 'निकालना',
-      'ta': 'அகற்று',
-      'ur': 'دور',
+      'fr': 'Retirer',
     },
-    'gw54o3ei': {
+    'al1y3gg2': {
       'en': 'UserName',
-      'hi': 'उपयोगकर्ता नाम',
-      'ta': 'பயனர்பெயர்',
-      'ur': 'صارف کا نام',
+      'fr': 'Nom d\'utilisateur',
     },
-    '5ybblr1d': {
+    '2kr9iaxf': {
       'en': 'Remove',
-      'hi': 'निकालना',
-      'ta': 'அகற்று',
-      'ur': 'دور',
+      'fr': 'Retirer',
     },
-    'epngmu69': {
+    '2ix1upsk': {
       'en': 'UserName',
-      'hi': 'उपयोगकर्ता नाम',
-      'ta': 'பயனர்பெயர்',
-      'ur': 'صارف کا نام',
+      'fr': 'Nom d\'utilisateur',
     },
-    '1qnvp80y': {
+    'tjbe7tuc': {
       'en': 'Remove',
-      'hi': 'निकालना',
-      'ta': 'அகற்று',
-      'ur': 'دور',
+      'fr': 'Retirer',
     },
-    'rxgjnrtl': {
+    'djp0jjxt': {
       'en': 'Add Members',
-      'hi': 'सदस्यों को जोड़ें',
-      'ta': 'உறுப்பினர்களைச் சேர்க்கவும்',
-      'ur': 'ممبرز کو شامل کریں۔',
+      'fr': 'Ajouter des membres',
     },
-    'c69xi1a4': {
+    'ay6uchzn': {
       'en': 'Assign',
-      'hi': 'सौंपना',
-      'ta': 'ஒதுக்க',
-      'ur': 'تفویض',
+      'fr': 'Attribuer',
     },
-    'ac5i8pip': {
+    '04gswf7l': {
       'en': 'user@domainname.com',
-      'hi': 'user@domainname.com',
-      'ta': 'user@domainame.com',
-      'ur': 'user@domainname.com',
+      'fr': 'utilisateur@nom de domaine.com',
     },
-    'bixtd6lt': {
+    '88n7n0dy': {
       'en': 'View',
-      'hi': 'देखना',
-      'ta': 'காண்க',
-      'ur': 'دیکھیں',
+      'fr': 'Voir',
     },
-    's1ekanj3': {
+    'zj1ooqek': {
       'en': 'Username',
-      'hi': 'उपयोगकर्ता नाम',
-      'ta': 'பயனர் பெயர்',
-      'ur': 'صارف نام',
+      'fr': 'Nom d\'utilisateur',
     },
-    'xtjlfcyr': {
+    'dmxcz88y': {
       'en': 'user@domainname.com',
-      'hi': 'user@domainname.com',
-      'ta': 'user@domainame.com',
-      'ur': 'user@domainname.com',
+      'fr': 'utilisateur@nom de domaine.com',
     },
-    '9rm7l3fs': {
+    'jf5fwdvr': {
       'en': 'View',
-      'hi': 'देखना',
-      'ta': 'காண்க',
-      'ur': 'دیکھیں',
+      'fr': 'Voir',
     },
-    'chsej9xj': {
+    '60cr99sc': {
       'en': 'Username',
-      'hi': 'उपयोगकर्ता नाम',
-      'ta': 'பயனர் பெயர்',
-      'ur': 'صارف نام',
+      'fr': 'Nom d\'utilisateur',
     },
-    'a1tcbxkr': {
+    'o0iqx7l5': {
       'en': 'user@domainname.com',
-      'hi': 'user@domainname.com',
-      'ta': 'user@domainame.com',
-      'ur': 'user@domainname.com',
+      'fr': 'utilisateur@nom de domaine.com',
     },
-    'y6o0uvra': {
+    'v2z11d1d': {
       'en': 'View',
-      'hi': 'देखना',
-      'ta': 'காண்க',
-      'ur': 'دیکھیں',
+      'fr': 'Voir',
     },
-    'fb7aygmy': {
+    'x9y1d9fu': {
       'en': 'user@domainname.com',
-      'hi': 'user@domainname.com',
-      'ta': 'user@domainame.com',
-      'ur': 'user@domainname.com',
+      'fr': 'utilisateur@nom de domaine.com',
     },
-    'ug774jqi': {
+    'gu3vykzw': {
       'en': 'View',
-      'hi': 'देखना',
-      'ta': 'காண்க',
-      'ur': 'دیکھیں',
+      'fr': 'Voir',
     },
   },
   // Miscellaneous
   {
     'tuf7ywhd': {
       'en': 'Label',
-      'hi': 'लेबल',
-      'ta': 'லேபிள்',
-      'ur': 'لیبل',
+      'fr': 'Étiquette',
     },
     'z2zi1qq5': {
       'en': 'Button',
-      'hi': 'बटन',
-      'ta': 'பொத்தானை',
-      'ur': 'بٹن',
+      'fr': 'Bouton',
     },
     'qm71wpil': {
       'en': 'Button',
-      'hi': 'बटन',
-      'ta': 'பொத்தானை',
-      'ur': 'بٹن',
+      'fr': 'Bouton',
     },
     'fi5o91qd': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'skzc79wn': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     '0rnqst8h': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'nh43oztv': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'i4m03gv7': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     '9h5b120r': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     '2xxt8j1o': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     't7udujpl': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'zbbv93d3': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'lvg9hjf0': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'fve7lx80': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'jxwjrono': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     '2nuridg7': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'cql4rcil': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     't9vh67yu': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'ac2c7a8c': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     '43t0g3v5': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'hxsgfsan': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'zuih46g4': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     '8oo00kio': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'f4h7j5e1': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'dka0mr3o': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'a9x09f52': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'gn6bmhck': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'b9gx9zp0': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     '3ogdlxsd': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
     'uxmsgxy2': {
       'en': '',
-      'hi': '',
-      'ta': '',
-      'ur': '',
+      'fr': '',
     },
   },
 ].reduce((a, b) => a..addAll(b));

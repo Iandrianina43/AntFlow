@@ -65,7 +65,7 @@ class _CreateTask1SelectProjectWidgetState
               automaticallyImplyLeading: false,
               title: Text(
                 FFLocalizations.of(context).getText(
-                  '1evyvanx' /* Create Task */,
+                  'f85b93hp' /* Create Task */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily:
@@ -118,7 +118,7 @@ class _CreateTask1SelectProjectWidgetState
                                   0.0, 0.0, 24.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  '5p3w7kqb' /* Don't see your project? Add on... */,
+                                  'xrpl9hvp' /* Don't see your project? Add on... */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
@@ -149,7 +149,7 @@ class _CreateTask1SelectProjectWidgetState
                               );
                             },
                             text: FFLocalizations.of(context).getText(
-                              'atun5agk' /* Add Project */,
+                              'qqgmosbw' /* Add Project */,
                             ),
                             options: FFButtonOptions(
                               width: 130.0,
@@ -184,7 +184,7 @@ class _CreateTask1SelectProjectWidgetState
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                       child: FutureBuilder<List<ProjectsRecord>>(
                         future: (_model.firestoreRequestCompleter ??= Completer<
                                 List<ProjectsRecord>>()
@@ -368,7 +368,7 @@ class _CreateTask1SelectProjectWidgetState
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                              'nb0qs3fd' /* Last edited: */,
+                                                              '1mum6ndw' /* Last edited: */,
                                                             ),
                                                             style: FlutterFlowTheme
                                                                     .of(context)

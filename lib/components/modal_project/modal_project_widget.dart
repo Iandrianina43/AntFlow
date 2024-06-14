@@ -412,7 +412,7 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                       0.0, 0.0, 8.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      '4r29z75b' /* View All */,
+                                      'icksxvmc' /* View All */,
                                     ),
                                     textAlign: TextAlign.end,
                                     style: FlutterFlowTheme.of(context)
@@ -486,7 +486,7 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                               child: SelectionArea(
                                   child: Text(
                                 FFLocalizations.of(context).getText(
-                                  't5thu3gr' /* Completed Tasks */,
+                                  '1s96kgzw' /* Completed Tasks */,
                                 ),
                                 textAlign: TextAlign.center,
                                 style: FlutterFlowTheme.of(context)
@@ -506,7 +506,7 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                               child: SelectionArea(
                                   child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'fycpdliq' /* Number of Tasks */,
+                                  'm9usbvt3' /* Number of Tasks */,
                                 ),
                                 textAlign: TextAlign.center,
                                 style: FlutterFlowTheme.of(context)
@@ -682,17 +682,17 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                             tabs: [
                               Tab(
                                 text: FFLocalizations.of(context).getText(
-                                  't39dexai' /* In Progress */,
+                                  'ct782g8n' /* In Progress */,
                                 ),
                               ),
                               Tab(
                                 text: FFLocalizations.of(context).getText(
-                                  'gd3bhzsf' /* Completed */,
+                                  '4jxwjmaj' /* Completed */,
                                 ),
                               ),
                               Tab(
                                 text: FFLocalizations.of(context).getText(
-                                  'dy7qxdlp' /* Activity */,
+                                  'ccj0qvxh' /* Activity */,
                                 ),
                               ),
                             ],
@@ -1074,7 +1074,7 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                                'uu14cs8r' /* Due */,
+                                                                '0fpu4bmj' /* Due */,
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -1393,7 +1393,7 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                                   FFLocalizations.of(
                                                                           context)
                                                                       .getText(
-                                                                    'y686s4b1' /* Complete */,
+                                                                    'n9ele8af' /* Complete */,
                                                                   ),
                                                                   style: FlutterFlowTheme.of(
                                                                           context)
@@ -1462,7 +1462,7 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                                'lcgypwk6' /* Completed on */,
+                                                                'cda9gihy' /* Completed on */,
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -1592,7 +1592,7 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                                 child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                '99rgc554' /* Current Time */,
+                                                '4fznfxes' /* Current Time */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)

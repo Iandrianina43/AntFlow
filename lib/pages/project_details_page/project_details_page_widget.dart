@@ -208,7 +208,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget>
                                 4.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'y1upl145' /* Back */,
+                                '4yjrayhp' /* Back */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .displaySmall
@@ -479,7 +479,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget>
                                         0.0, 0.0, 8.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        '03c7gtcz' /* View All */,
+                                        '27l7y5jo' /* View All */,
                                       ),
                                       textAlign: TextAlign.end,
                                       style: FlutterFlowTheme.of(context)
@@ -554,7 +554,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget>
                                 child: SelectionArea(
                                     child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'vdyl48dm' /* Completed Tasks */,
+                                    'hbvwoyp5' /* Completed Tasks */,
                                   ),
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
@@ -574,7 +574,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget>
                                 child: SelectionArea(
                                     child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'f24x8bkt' /* Number of Tasks */,
+                                    'bwul9qxo' /* Number of Tasks */,
                                   ),
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
@@ -761,17 +761,17 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget>
                               tabs: [
                                 Tab(
                                   text: FFLocalizations.of(context).getText(
-                                    '8i8307mb' /* In Progress */,
+                                    'b7js3qj0' /* In Progress */,
                                   ),
                                 ),
                                 Tab(
                                   text: FFLocalizations.of(context).getText(
-                                    '1870f5uq' /* Completed */,
+                                    'bbosu6bh' /* Completed */,
                                   ),
                                 ),
                                 Tab(
                                   text: FFLocalizations.of(context).getText(
-                                    '4cmr54lc' /* Activity */,
+                                    's3410mg4' /* Activity */,
                                   ),
                                 ),
                               ],
@@ -1155,7 +1155,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                                  'mfp5v5yt' /* Due */,
+                                                                  '93jlzw34' /* Due */,
                                                                 ),
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
@@ -1463,7 +1463,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget>
                                                                     FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      'xo4dmszc' /* Complete */,
+                                                                      'vx59bduu' /* Complete */,
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
@@ -1532,7 +1532,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                                  '24rs6kdw' /* Completed on */,
+                                                                  'cibliqdj' /* Completed on */,
                                                                 ),
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
@@ -1658,7 +1658,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget>
                                                   child: Text(
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                                  'alg6xfua' /* Current Time */,
+                                                  'u74nb5eq' /* Current Time */,
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)

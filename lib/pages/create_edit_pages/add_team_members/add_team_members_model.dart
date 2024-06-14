@@ -28,7 +28,7 @@ class AddTeamMembersModel extends FlutterFlowModel<AddTeamMembersWidget> {
   String? _userNameTextControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
-        '41umybiv' /* Field is required */,
+        'y51v7ocx' /* Field is required */,
       );
     }
 
@@ -43,7 +43,7 @@ class AddTeamMembersModel extends FlutterFlowModel<AddTeamMembersWidget> {
       BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
-        'i5wagnfq' /* Field is required */,
+        'hg6cv6or' /* Field is required */,
       );
     }
 
@@ -60,7 +60,7 @@ class AddTeamMembersModel extends FlutterFlowModel<AddTeamMembersWidget> {
   String? _titleRoleTextControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
-        'h5euxn0m' /* Field is required */,
+        'kdgu1oif' /* Field is required */,
       );
     }
 

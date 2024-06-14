@@ -74,7 +74,7 @@ class _EditProjectWidgetState extends State<EditProjectWidget> {
               automaticallyImplyLeading: false,
               title: Text(
                 FFLocalizations.of(context).getText(
-                  '7wmlszlo' /* Edit Project */,
+                  'jq4uhlra' /* Edit Project */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily:
@@ -141,7 +141,7 @@ class _EditProjectWidgetState extends State<EditProjectWidget> {
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        'wwzsnwbn' /* Project Name */,
+                                        '9zmy4gf2' /* Project Name */,
                                       ),
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .headlineSmall
@@ -216,7 +216,7 @@ class _EditProjectWidgetState extends State<EditProjectWidget> {
                                     decoration: InputDecoration(
                                       hintText:
                                           FFLocalizations.of(context).getText(
-                                        'hyz5515g' /* Enter description here... */,
+                                        'vvovb81m' /* Enter description here... */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodySmall
@@ -336,7 +336,7 @@ class _EditProjectWidgetState extends State<EditProjectWidget> {
                                     context.pop();
                                   },
                                   text: FFLocalizations.of(context).getText(
-                                    '57dpf0bb' /* Save Changes */,
+                                    'kv2q1duq' /* Save Changes */,
                                   ),
                                   options: FFButtonOptions(
                                     width: 270.0,

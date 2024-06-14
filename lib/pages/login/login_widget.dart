@@ -84,28 +84,24 @@ class _LoginWidgetState extends State<LoginWidget>
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 24.0, 0.0, 24.0),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/3a9k2_3.png',
-                                      width: 220.0,
-                                      height: 200.0,
-                                      fit: BoxFit.fitWidth,
-                                    ),
-                                  ],
-                                ),
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/3a9k2_3.png',
+                                    width: 311.0,
+                                    height: 267.0,
+                                    fit: BoxFit.fitWidth,
+                                  ),
+                                ],
                               ),
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     72.0, 0.0, 72.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'awn1ttmh' /* Enter your credentials to acce... */,
+                                    'qwvnac25' /* Enter your credentials to acce... */,
                                   ),
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
@@ -169,13 +165,13 @@ class _LoginWidgetState extends State<LoginWidget>
                                             Tab(
                                               text: FFLocalizations.of(context)
                                                   .getText(
-                                                '7coe115q' /* Sign In */,
+                                                'eno5jji0' /* Sign In */,
                                               ),
                                             ),
                                             Tab(
                                               text: FFLocalizations.of(context)
                                                   .getText(
-                                                'mnrqbvlk' /* Sign Up */,
+                                                '1z611047' /* Sign Up */,
                                               ),
                                             ),
                                           ],
@@ -197,11 +193,8 @@ class _LoginWidgetState extends State<LoginWidget>
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(
-                                                                20.0,
-                                                                20.0,
-                                                                20.0,
-                                                                0.0),
+                                                            .fromSTEB(20.0, 0.0,
+                                                                20.0, 0.0),
                                                     child: TextFormField(
                                                       controller: _model
                                                           .emailAddressTextController,
@@ -214,24 +207,8 @@ class _LoginWidgetState extends State<LoginWidget>
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                          'e9pnyzm9' /* Email Address */,
+                                                          'cqanau65' /* Email Address */,
                                                         ),
-                                                        labelStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelMedium
-                                                                .override(
-                                                                  fontFamily: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMediumFamily,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .labelMediumFamily),
-                                                                ),
                                                         hintStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -313,7 +290,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                             EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     20.0,
-                                                                    16.0,
+                                                                    20.0,
                                                                     20.0,
                                                                     16.0),
                                                       ),
@@ -359,7 +336,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                          'z0v8ougp' /* Password */,
+                                                          'o3n4ic2o' /* Password */,
                                                         ),
                                                         labelStyle:
                                                             FlutterFlowTheme.of(
@@ -537,7 +514,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                       text: FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        'd7zjcwes' /* Sign In */,
+                                                        't09i1513' /* Sign In */,
                                                       ),
                                                       options: FFButtonOptions(
                                                         width: 230.0,
@@ -601,7 +578,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                       text: FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        'hhgceptf' /* Forgot Password? */,
+                                                        'rpa7ge5c' /* Forgot Password? */,
                                                       ),
                                                       options: FFButtonOptions(
                                                         width: 170.0,
@@ -675,11 +652,12 @@ class _LoginWidgetState extends State<LoginWidget>
                                                       obscureText: false,
                                                       decoration:
                                                           InputDecoration(
+                                                        isDense: false,
                                                         labelText:
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                          'ye7jjwdc' /* Email Address */,
+                                                          'hx1g7lry' /* Email Address */,
                                                         ),
                                                         labelStyle:
                                                             FlutterFlowTheme.of(
@@ -762,7 +740,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                             EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     20.0,
-                                                                    16.0,
+                                                                    0.0,
                                                                     20.0,
                                                                     16.0),
                                                       ),
@@ -808,7 +786,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                          'y4q7638d' /* Password */,
+                                                          'ggcla6vd' /* Password */,
                                                         ),
                                                         labelStyle:
                                                             FlutterFlowTheme.of(
@@ -972,7 +950,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                       text: FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        'ffc8ingn' /* Create Account */,
+                                                        'wfpsv30y' /* Create Account */,
                                                       ),
                                                       options: FFButtonOptions(
                                                         width: 230.0,

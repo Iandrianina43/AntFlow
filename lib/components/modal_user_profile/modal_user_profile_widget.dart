@@ -147,7 +147,7 @@ class _ModalUserProfileWidgetState extends State<ModalUserProfileWidget>
                         EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 16.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
                           width: 80.0,
@@ -213,89 +213,6 @@ class _ModalUserProfileWidgetState extends State<ModalUserProfileWidget>
                                         ),
                                   ),
                                 ),
-                                Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 8.0, 0.0, 0.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          'xbcjin31' /* Team Name */,
-                                        ),
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryText,
-                                              letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily),
-                                            ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 8.0, 0.0, 0.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          's2rahhu0' /*  -  */,
-                                        ),
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryText,
-                                              letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily),
-                                            ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          8.0, 8.0, 0.0, 0.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          'f87wic4n' /* 12 Tasks */,
-                                        ),
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryText,
-                                              letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily),
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
                               ],
                             ),
                           ),
@@ -330,7 +247,7 @@ class _ModalUserProfileWidgetState extends State<ModalUserProfileWidget>
                     children: [
                       Text(
                         FFLocalizations.of(context).getText(
-                          '1r4s70n4' /* Team Bio */,
+                          'n27jr1hg' /* Team Bio */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
                               fontFamily:
@@ -379,7 +296,7 @@ class _ModalUserProfileWidgetState extends State<ModalUserProfileWidget>
                     children: [
                       Text(
                         FFLocalizations.of(context).getText(
-                          'ai2tvk8r' /* Tasks */,
+                          'xf490hul' /* Tasks */,
                         ),
                         style: FlutterFlowTheme.of(context).labelSmall.override(
                               fontFamily:
@@ -655,7 +572,7 @@ class _ModalUserProfileWidgetState extends State<ModalUserProfileWidget>
                                             Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'k2fas9o8' /* Due */,
+                                                'y5t25owh' /* Due */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)

@@ -79,7 +79,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
             ),
             title: Text(
               FFLocalizations.of(context).getText(
-                'pt9elxe4' /* Edit Profile */,
+                'k7pi6kw2' /* Edit Profile */,
               ),
               style: FlutterFlowTheme.of(context).titleSmall.override(
                     fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
@@ -173,7 +173,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                               ).then((value) => safeSetState(() {}));
                             },
                             text: FFLocalizations.of(context).getText(
-                              'evdej962' /* Change Photo */,
+                              '4d3ywbq0' /* Change Photo */,
                             ),
                             options: FFButtonOptions(
                               width: 130.0,
@@ -215,7 +215,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           obscureText: false,
                           decoration: InputDecoration(
                             labelText: FFLocalizations.of(context).getText(
-                              't7tz85hw' /* Your Name */,
+                              'nzf1rcao' /* Your Name */,
                             ),
                             labelStyle: FlutterFlowTheme.of(context)
                                 .labelMedium
@@ -297,7 +297,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           obscureText: false,
                           decoration: InputDecoration(
                             labelText: FFLocalizations.of(context).getText(
-                              'p7ef0qd8' /* Title or Role */,
+                              'hbr9z9is' /* Title or Role */,
                             ),
                             labelStyle: FlutterFlowTheme.of(context)
                                 .labelMedium
@@ -386,7 +386,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                           .bodySmallFamily),
                                 ),
                             hintText: FFLocalizations.of(context).getText(
-                              'br3jvobf' /* Your bio */,
+                              'dpn0lo3j' /* Your bio */,
                             ),
                             hintStyle: FlutterFlowTheme.of(context)
                                 .labelMedium
@@ -455,7 +455,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       child: SelectionArea(
                           child: Text(
                         FFLocalizations.of(context).getText(
-                          '5vmz78yy' /* Email associated with this acc... */,
+                          'sk49y1qh' /* Email associated with this acc... */,
                         ),
                         style: FlutterFlowTheme.of(context).labelSmall.override(
                               fontFamily:
@@ -500,7 +500,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                             context.pop();
                           },
                           text: FFLocalizations.of(context).getText(
-                            '4cj4t3x4' /* Save Changes */,
+                            '224did3m' /* Save Changes */,
                           ),
                           options: FFButtonOptions(
                             width: 200.0,

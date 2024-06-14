@@ -88,7 +88,7 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                       context.pushNamed('myProfile');
                     },
                     text: FFLocalizations.of(context).getText(
-                      'j81no67g' /* View */,
+                      'gnxpb2ai' /* View */,
                     ),
                     options: FFButtonOptions(
                       width: 80.0,
@@ -161,85 +161,6 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                             ),
                       ),
                     ),
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 12.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Text(
-                            FFLocalizations.of(context).getText(
-                              '1281zly2' /* 345 */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
-                                  letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily),
-                                ),
-                          ),
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                4.0, 0.0, 12.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'ikdzucnf' /* Following */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodySmall
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodySmallFamily,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodySmallFamily),
-                                  ),
-                            ),
-                          ),
-                          Text(
-                            FFLocalizations.of(context).getText(
-                              '0mvvm3zs' /* 345 */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
-                                  letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily),
-                                ),
-                          ),
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                4.0, 0.0, 12.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'ka33pk44' /* Followers */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodySmall
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodySmallFamily,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodySmallFamily),
-                                  ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
                     Divider(
                       height: 24.0,
                       thickness: 1.0,
@@ -278,7 +199,7 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                                   16.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'xnmol3vm' /* Tracker */,
+                                  '8f8t2vli' /* Tracker */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -330,7 +251,7 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                                   16.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'tgp9100p' /* Projects */,
+                                  'an74qqfr' /* Projects */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -382,7 +303,7 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                                   16.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'gvsvhzns' /* Team */,
+                                  '963xee2s' /* Team */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -426,45 +347,7 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                                 16.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'r33amlko' /* About */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyMediumFamily),
-                                  ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 8.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 12.0, 0.0, 12.0),
-                            child: Icon(
-                              Icons.star_rate_rounded,
-                              color: FlutterFlowTheme.of(context).primaryText,
-                              size: 24.0,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                16.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'hfpu6vi1' /* Rate App */,
+                                'qajspfhy' /* About */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
@@ -522,7 +405,7 @@ class _DrawerNavWidgetState extends State<DrawerNavWidget> {
                           EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          'of8ozb94' /* Log Out */,
+                          'xu1ntpz9' /* Log Out */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily:

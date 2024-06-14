@@ -122,7 +122,7 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                 child: SelectionArea(
                                     child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'd3zhz60s' /* Create Project */,
+                                    'ivyuedf1' /* Create Project */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .headlineMedium
@@ -163,7 +163,7 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                             child: SelectionArea(
                                 child: Text(
                               FFLocalizations.of(context).getText(
-                                'ndua9r0o' /* Please add the name & descript... */,
+                                'dtxn6zzi' /* Please add the name & descript... */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .labelSmall
@@ -187,7 +187,7 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                               obscureText: false,
                               decoration: InputDecoration(
                                 labelText: FFLocalizations.of(context).getText(
-                                  'ijnwlsug' /* Project Name */,
+                                  'pmrgulyt' /* Project Name */,
                                 ),
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .headlineSmall
@@ -261,7 +261,7 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                               obscureText: false,
                               decoration: InputDecoration(
                                 hintText: FFLocalizations.of(context).getText(
-                                  'l7qnilp2' /* Enter description here... */,
+                                  'g8iltq8h' /* Enter description here... */,
                                 ),
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .bodySmall
@@ -340,7 +340,7 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                         16.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        'iou7k3x8' /* Assign Users */,
+                                        'bmy1p8ix' /* Assign Users */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyLarge
@@ -361,7 +361,7 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                         16.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        'h40v3y8u' /* Find members by searching belo... */,
+                                        'j4pesubl' /* Find members by searching belo... */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .labelSmall
@@ -387,7 +387,7 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                               usersRecord.orderBy(
                                                   'display_name',
                                                   descending: true),
-                                          limit: 25,
+                                          limit: 10,
                                         ),
                                       ),
                                       builder: (context, snapshot) {
@@ -742,7 +742,7 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                                                             text: FFLocalizations
                                                                     .of(context)
                                                                 .getText(
-                                                              '74kovm7t' /* Assign */,
+                                                              'oc24n01y' /* Assign */,
                                                             ),
                                                             options:
                                                                 FFButtonOptions(
@@ -882,7 +882,7 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget> {
                             setState(() {});
                           },
                           text: FFLocalizations.of(context).getText(
-                            'p9mvmaob' /* Create Project */,
+                            'rs4m3qu7' /* Create Project */,
                           ),
                           options: FFButtonOptions(
                             width: 270.0,

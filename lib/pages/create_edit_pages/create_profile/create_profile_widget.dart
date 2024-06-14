@@ -66,7 +66,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
               automaticallyImplyLeading: false,
               title: Text(
                 FFLocalizations.of(context).getText(
-                  'vyqdl7s3' /* Create Profile */,
+                  'u10qm9xc' /* Create Profile */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily:
@@ -244,7 +244,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                 decoration: InputDecoration(
                                   labelText:
                                       FFLocalizations.of(context).getText(
-                                    'cnc5fmbk' /* Full Name */,
+                                    'ym74n59b' /* Full Name */,
                                   ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .bodySmall
@@ -318,7 +318,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                 decoration: InputDecoration(
                                   labelText:
                                       FFLocalizations.of(context).getText(
-                                    'cjyo6ik7' /* Title or Role */,
+                                    'pb3kx2zr' /* Title or Role */,
                                   ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .bodySmall
@@ -391,7 +391,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                 obscureText: false,
                                 decoration: InputDecoration(
                                   hintText: FFLocalizations.of(context).getText(
-                                    'h398jj2j' /* Enter description here.. */,
+                                    'l5thzdz7' /* Enter description here.. */,
                                   ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .bodySmall
@@ -480,7 +480,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                               context.pushNamed('Main_tracker');
                             },
                             text: FFLocalizations.of(context).getText(
-                              '7ve36dhv' /* Create & Invite User */,
+                              'uh616rg5' /* Create & Invite User */,
                             ),
                             options: FFButtonOptions(
                               width: 270.0,

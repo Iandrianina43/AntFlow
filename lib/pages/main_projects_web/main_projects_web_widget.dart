@@ -230,7 +230,7 @@ class _MainProjectsWebWidgetState extends State<MainProjectsWebWidget>
                                   children: [
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        'qcd4z131' /* Projects */,
+                                        'd7aguiwl' /* Projects */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .headlineMedium
@@ -250,7 +250,7 @@ class _MainProjectsWebWidgetState extends State<MainProjectsWebWidget>
                                           0.0, 4.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          '0e5jbrkh' /* A list of your projects below. */,
+                                          '684745v9' /* A list of your projects below. */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .labelSmall
@@ -321,7 +321,7 @@ class _MainProjectsWebWidgetState extends State<MainProjectsWebWidget>
                                       FFAppState().update(() {});
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      '5mru78lw' /* Create Project */,
+                                      'a7i21l37' /* Create Project */,
                                     ),
                                     icon: Icon(
                                       Icons.create_new_folder_rounded,

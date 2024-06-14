@@ -77,7 +77,7 @@ class _TeamMembersWidgetState extends State<TeamMembersWidget> {
               ),
               title: Text(
                 FFLocalizations.of(context).getText(
-                  'cr7ls6ar' /* Add Members */,
+                  'ryuvea9f' /* Add Members */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineSmall.override(
                       fontFamily:
@@ -130,7 +130,7 @@ class _TeamMembersWidgetState extends State<TeamMembersWidget> {
                         EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
                     child: Text(
                       FFLocalizations.of(context).getText(
-                        'gxfshi24' /* Members in Project */,
+                        'fd92zyzh' /* Members in Project */,
                       ),
                       style: FlutterFlowTheme.of(context).bodySmall.override(
                             fontFamily:
@@ -392,10 +392,46 @@ class _TeamMembersWidgetState extends State<TeamMembersWidget> {
                                                     },
                                                   ),
                                                 });
+
+                                                context.pushNamed(
+                                                  'projectDetailsPage',
+                                                  queryParameters: {
+                                                    'projectRef':
+                                                        serializeParam(
+                                                      widget.projectRef,
+                                                      ParamType.Document,
+                                                    ),
+                                                  }.withoutNulls,
+                                                  extra: <String, dynamic>{
+                                                    'projectRef':
+                                                        widget.projectRef,
+                                                  },
+                                                );
+
+                                                ScaffoldMessenger.of(context)
+                                                    .showSnackBar(
+                                                  SnackBar(
+                                                    content: Text(
+                                                      'You have removed a member from the project!',
+                                                      style: TextStyle(
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
+                                                      ),
+                                                    ),
+                                                    duration: Duration(
+                                                        milliseconds: 4000),
+                                                    backgroundColor:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .secondary,
+                                                  ),
+                                                );
                                               },
                                               text: FFLocalizations.of(context)
                                                   .getText(
-                                                'prexm7ph' /* Remove */,
+                                                'mejjwqjk' /* Remove */,
                                               ),
                                               options: FFButtonOptions(
                                                 width: 130.0,
@@ -456,7 +492,7 @@ class _TeamMembersWidgetState extends State<TeamMembersWidget> {
                         EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
                     child: Text(
                       FFLocalizations.of(context).getText(
-                        '78fdfkdh' /* Add Members */,
+                        'sowwtsvq' /* Add Members */,
                       ),
                       style: FlutterFlowTheme.of(context).bodySmall.override(
                             fontFamily:
@@ -782,7 +818,7 @@ class _TeamMembersWidgetState extends State<TeamMembersWidget> {
                                             },
                                             text: FFLocalizations.of(context)
                                                 .getText(
-                                              'rzrf0zsp' /* Assign */,
+                                              '0ok0v50s' /* Assign */,
                                             ),
                                             options: FFButtonOptions(
                                               width: 70.0,

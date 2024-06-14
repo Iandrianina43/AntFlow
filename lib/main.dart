@@ -103,9 +103,7 @@ class _MyAppState extends State<MyApp> {
       locale: _locale,
       supportedLocales: const [
         Locale('en'),
-        Locale('hi'),
-        Locale('ta'),
-        Locale('ur'),
+        Locale('fr'),
       ],
       theme: ThemeData(
         brightness: Brightness.light,
@@ -184,7 +182,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 size: 24.0,
               ),
               label: FFLocalizations.of(context).getText(
-                'hmxr55qt' /* Home */,
+                'ay7vx0uv' /* Home */,
               ),
               tooltip: '',
             ),
@@ -198,7 +196,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 size: 24.0,
               ),
               label: FFLocalizations.of(context).getText(
-                '6mv3j0ec' /* Tracker */,
+                'dwywy7ca' /* Tracker */,
               ),
               tooltip: '',
             ),
@@ -212,7 +210,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 size: 24.0,
               ),
               label: FFLocalizations.of(context).getText(
-                'h2tjjlou' /* My Team */,
+                'i2tjwysy' /* My Team */,
               ),
               tooltip: '',
             ),
@@ -226,7 +224,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 size: 24.0,
               ),
               label: FFLocalizations.of(context).getText(
-                '3e1n01mf' /* Home */,
+                'xvg8y0h1' /* Home */,
               ),
               tooltip: '',
             )

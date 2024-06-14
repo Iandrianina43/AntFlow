@@ -29,13 +29,13 @@ class CreateTaskModel extends FlutterFlowModel<CreateTaskWidget> {
   String? _taskNameTextControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
-        '3nx43hj1' /* Please add a task name. */,
+        'a9ob4e0d' /* Please add a task name. */,
       );
     }
 
     if (val.length < 3) {
       return FFLocalizations.of(context).getText(
-        'tjxg3net' /* Please enter at least 3 letter... */,
+        'zyaj8zh3' /* Please enter at least 3 letter... */,
       );
     }
 

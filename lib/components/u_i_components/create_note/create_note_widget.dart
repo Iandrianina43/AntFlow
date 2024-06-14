@@ -119,7 +119,7 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                   16.0, 12.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'i9im6f7s' /* Create Note */,
+                                  'ckgzpqno' /* Create Note */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .headlineMedium
@@ -139,7 +139,7 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                   16.0, 4.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'y8jieyz4' /* Create a note to keep your tea... */,
+                                  'vwrwr1zv' /* Create a note to keep your tea... */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
@@ -206,7 +206,7 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                 obscureText: false,
                                 decoration: InputDecoration(
                                   hintText: FFLocalizations.of(context).getText(
-                                    'sq20csss' /* Enter your note here... */,
+                                    'ictixy2n' /* Enter your note here... */,
                                   ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .bodySmall
@@ -364,7 +364,7 @@ class _CreateNoteWidgetState extends State<CreateNoteWidget> {
                                       setState(() {});
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      'clj48a46' /* Create Note */,
+                                      '5rej5r1z' /* Create Note */,
                                     ),
                                     options: FFButtonOptions(
                                       width: 270.0,

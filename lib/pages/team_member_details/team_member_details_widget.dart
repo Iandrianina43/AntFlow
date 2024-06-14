@@ -204,89 +204,6 @@ class _TeamMemberDetailsWidgetState extends State<TeamMemberDetailsWidget>
                                           ),
                                     ),
                                   ),
-                                  Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 8.0, 0.0, 0.0),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'ukmpqe9t' /* Team Name */,
-                                          ),
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryText,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
-                                              ),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 8.0, 0.0, 0.0),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'rq31lxfx' /*  -  */,
-                                          ),
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryText,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
-                                              ),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            8.0, 8.0, 0.0, 0.0),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            '8lhfh12w' /* 12 Tasks */,
-                                          ),
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryText,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
-                                              ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
                                 ],
                               ),
                             ),
@@ -299,7 +216,7 @@ class _TeamMemberDetailsWidgetState extends State<TeamMemberDetailsWidget>
                           EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 4.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          'j2ieipip' /* Team Bio */,
+                          'yhae4rja' /* Team Bio */,
                         ),
                         style:
                             FlutterFlowTheme.of(context).labelMedium.override(
@@ -334,7 +251,7 @@ class _TeamMemberDetailsWidgetState extends State<TeamMemberDetailsWidget>
                           EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          '9s048496' /* Tasks */,
+                          'khsg4cbl' /* Tasks */,
                         ),
                         style:
                             FlutterFlowTheme.of(context).labelMedium.override(
@@ -610,7 +527,7 @@ class _TeamMemberDetailsWidgetState extends State<TeamMemberDetailsWidget>
                                               Text(
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                                  '3rwjcoju' /* Due */,
+                                                  'a3ch1tw5' /* Due */,
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
