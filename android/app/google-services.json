@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "603557659590",
+    "project_id": "ant-flow-k7u3e4",
+    "storage_bucket": "ant-flow-k7u3e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603557659590:android:1f089265c115e38a6ee8c7",
+        "android_client_info": {
+          "package_name": "com.mycompany.entprojecttracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiMEWfujbjT_5g19Dwwqb6mMYe8PWyjnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
