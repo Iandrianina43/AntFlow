@@ -11,7 +11,6 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'dart:math';
-import 'dart:ui';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'modal_project_widget.dart' show ModalProjectWidget;
 import 'package:cached_network_image/cached_network_image.dart';

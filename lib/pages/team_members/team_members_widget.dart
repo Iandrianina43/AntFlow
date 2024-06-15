@@ -412,7 +412,7 @@ class _TeamMembersWidgetState extends State<TeamMembersWidget> {
                                                     .showSnackBar(
                                                   SnackBar(
                                                     content: Text(
-                                                      'You have removed a member from the project!',
+                                                      'You removed a member from the project!',
                                                       style: TextStyle(
                                                         color:
                                                             FlutterFlowTheme.of(

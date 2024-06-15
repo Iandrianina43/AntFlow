@@ -477,9 +477,17 @@ class _MainProjectsWebWidgetState extends State<MainProjectsWebWidget>
                                                       padding: MediaQuery
                                                           .viewInsetsOf(
                                                               context),
-                                                      child: ModalProjectWidget(
-                                                        projectRef:
-                                                            desktopViewProjectsRecord,
+                                                      child: Container(
+                                                        height:
+                                                            MediaQuery.sizeOf(
+                                                                        context)
+                                                                    .height *
+                                                                1.0,
+                                                        child:
+                                                            ModalProjectWidget(
+                                                          projectRef:
+                                                              desktopViewProjectsRecord,
+                                                        ),
                                                       ),
                                                     ),
                                                   );

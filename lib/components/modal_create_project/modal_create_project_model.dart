@@ -1,15 +1,12 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
-import '/components/empty_states/empty_members/empty_members_widget.dart';
 import '/components/modal_task_create_2/modal_task_create2_widget.dart';
-import '/components/modal_user_profile/modal_user_profile_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import 'modal_create_project_widget.dart' show ModalCreateProjectWidget;
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -66,8 +63,6 @@ class ModalCreateProjectModel
     return null;
   }
 
-  // Stores action output result for [Backend Call - Create Document] action in Button widget.
-  ActivityRecord? newActivity2;
   // Stores action output result for [Backend Call - Create Document] action in Button widget.
   ProjectsRecord? createdProject;
 

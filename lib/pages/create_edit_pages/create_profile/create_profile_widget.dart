@@ -480,7 +480,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                               context.pushNamed('Main_tracker');
                             },
                             text: FFLocalizations.of(context).getText(
-                              'uh616rg5' /* Create & Invite User */,
+                              'uh616rg5' /* Create  */,
                             ),
                             options: FFButtonOptions(
                               width: 270.0,

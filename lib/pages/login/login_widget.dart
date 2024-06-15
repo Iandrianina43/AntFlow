@@ -209,6 +209,26 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 .getText(
                                                           'cqanau65' /* Email Address */,
                                                         ),
+                                                        labelStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Outfit',
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryText,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w500,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          'Outfit'),
+                                                                ),
                                                         hintStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -219,6 +239,9 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                       .bodySmallFamily,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w500,
                                                                   useGoogleFonts: GoogleFonts
                                                                           .asMap()
                                                                       .containsKey(
@@ -639,11 +662,8 @@ class _LoginWidgetState extends State<LoginWidget>
                                                   Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(
-                                                                20.0,
-                                                                20.0,
-                                                                20.0,
-                                                                0.0),
+                                                            .fromSTEB(20.0, 0.0,
+                                                                20.0, 0.0),
                                                     child: TextFormField(
                                                       controller: _model
                                                           .emailAddressCreateTextController,

@@ -248,7 +248,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': 'Entrez la description ici..',
     },
     'uh616rg5': {
-      'en': 'Create & Invite User',
+      'en': 'Create ',
       'fr': 'Créer et inviter un utilisateur',
     },
     'afrmdqrj': {
@@ -1155,63 +1155,63 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // modal_Project
   {
-    'icksxvmc': {
+    'b3tmb94w': {
       'en': 'View All',
       'fr': 'Voir tout',
     },
-    '1s96kgzw': {
+    '6p3cfcop': {
       'en': 'Completed Tasks',
       'fr': 'Tâches terminées',
     },
-    'm9usbvt3': {
+    '53v52enf': {
       'en': 'Number of Tasks',
       'fr': 'Nombre de tâches',
     },
-    'ct782g8n': {
+    'e1yfytdt': {
       'en': 'In Progress',
       'fr': 'En cours',
     },
-    '0fpu4bmj': {
+    'bj5sn810': {
       'en': 'Due',
       'fr': 'Exigible',
     },
-    'agc6fdzl': {
+    'idueoryh': {
       'en': 'Issue #242952592',
       'fr': 'Numéro 242952592',
     },
-    'dhtms7nd': {
+    'lo6bi8am': {
       'en': 'In Progress',
       'fr': 'En cours',
     },
-    'mjl2ilvv': {
+    '3tnn1niq': {
       'en': 'Andres Reynolds',
       'fr': 'Andrés Reynolds',
     },
-    's6lse6np': {
+    'aeur7shi': {
       'en': 'Due',
       'fr': 'Exigible',
     },
-    'd901uuva': {
+    'dhvgcq6k': {
       'en': 'Tuesday, 10:00am',
       'fr': 'mardi, 10h00',
     },
-    '4jxwjmaj': {
+    '0yxp4dtr': {
       'en': 'Completed',
       'fr': 'Complété',
     },
-    'n9ele8af': {
+    's2h1tnyx': {
       'en': 'Complete',
       'fr': 'Complet',
     },
-    'cda9gihy': {
+    '43vzosc9': {
       'en': 'Completed on',
       'fr': 'Terminé le',
     },
-    'ccj0qvxh': {
+    'z0rvlkv3': {
       'en': 'Activity',
       'fr': 'Activité',
     },
-    '4fznfxes': {
+    '0rv99lbn': {
       'en': 'Current Time',
       'fr': 'Heure actuelle',
     },
@@ -1318,18 +1318,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'g8iltq8h': {
       'en': 'Enter description here...',
       'fr': 'Entrez la description ici...',
-    },
-    'bmy1p8ix': {
-      'en': 'Assign Users',
-      'fr': 'Attribuer des utilisateurs',
-    },
-    'j4pesubl': {
-      'en': 'Find members by searching below',
-      'fr': 'Trouvez des membres en effectuant une recherche ci-dessous',
-    },
-    'oc24n01y': {
-      'en': 'Assign',
-      'fr': 'Attribuer',
     },
     'rs4m3qu7': {
       'en': 'Create Project',

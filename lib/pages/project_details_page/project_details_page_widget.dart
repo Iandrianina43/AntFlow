@@ -798,8 +798,8 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget>
                                                     .projectRef?.reference,
                                               )
                                               .where(
-                                                'completed',
-                                                isEqualTo: false,
+                                                'status',
+                                                isEqualTo: 'In Progress',
                                               )
                                               .orderBy('dueDate',
                                                   descending: true),

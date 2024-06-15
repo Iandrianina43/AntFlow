@@ -2571,7 +2571,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                         24.0, 8.0, 0.0, 12.0),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
-                                          0.25,
+                                          0.35,
                                       height: 100.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
@@ -2995,7 +2995,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                         24.0, 8.0, 0.0, 12.0),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
-                                          0.25,
+                                          0.35,
                                       height: 100.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
@@ -3397,7 +3397,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                         24.0, 8.0, 24.0, 12.0),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
-                                          0.25,
+                                          0.35,
                                       height: 100.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
