@@ -681,9 +681,12 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                       .listViewPagingController1!
                                                       .itemList![listViewIndex];
                                               return Visibility(
-                                                visible: listViewAllTasksRecord
-                                                        .completed ==
-                                                    false,
+                                                visible: (listViewAllTasksRecord
+                                                            .status ==
+                                                        'In Progress') ||
+                                                    (listViewAllTasksRecord
+                                                            .status ==
+                                                        'Not Started'),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
