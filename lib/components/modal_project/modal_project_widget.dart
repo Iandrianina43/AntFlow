@@ -1173,8 +1173,8 @@ class _ModalProjectWidgetState extends State<ModalProjectWidget>
                                       isEqualTo: widget.projectRef?.reference,
                                     )
                                     .where(
-                                      'completed',
-                                      isEqualTo: true,
+                                      'status',
+                                      isEqualTo: 'Complete',
                                     ),
                               ),
                               builder: (context, snapshot) {

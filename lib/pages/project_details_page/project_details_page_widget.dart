@@ -1272,8 +1272,8 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget>
                                                     .projectRef?.reference,
                                               )
                                               .where(
-                                                'completed',
-                                                isEqualTo: true,
+                                                'status',
+                                                isEqualTo: 'Complete',
                                               ),
                                     ),
                                     builder: (context, snapshot) {
