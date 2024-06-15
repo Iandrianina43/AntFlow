@@ -22,7 +22,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 import 'package:provider/provider.dart';
 
 class MainTrackerModel extends FlutterFlowModel<MainTrackerWidget> {
@@ -41,13 +40,6 @@ class MainTrackerModel extends FlutterFlowModel<MainTrackerWidget> {
   TabController? tabBarController;
   int get tabBarCurrentIndex =>
       tabBarController != null ? tabBarController!.index : 0;
-
-  // State field(s) for ListView widget.
-
-  PagingController<DocumentSnapshot?, AllTasksRecord>?
-      listViewPagingController1;
-  Query? listViewPagingQuery1;
-  List<StreamSubscription?> listViewStreamSubscriptions1 = [];
 
   Completer<List<AllTasksRecord>>? firestoreRequestCompleter2;
   Completer<List<AllTasksRecord>>? firestoreRequestCompleter4;
@@ -73,43 +65,9 @@ class MainTrackerModel extends FlutterFlowModel<MainTrackerWidget> {
     userCardModel.dispose();
     notificationTriggerModel.dispose();
     tabBarController?.dispose();
-    listViewStreamSubscriptions1.forEach((s) => s?.cancel());
-    listViewPagingController1?.dispose();
   }
 
   /// Additional helper methods.
-  PagingController<DocumentSnapshot?, AllTasksRecord> setListViewController1(
-    Query query, {
-    DocumentReference<Object?>? parent,
-  }) {
-    listViewPagingController1 ??= _createListViewController1(query, parent);
-    if (listViewPagingQuery1 != query) {
-      listViewPagingQuery1 = query;
-      listViewPagingController1?.refresh();
-    }
-    return listViewPagingController1!;
-  }
-
-  PagingController<DocumentSnapshot?, AllTasksRecord>
-      _createListViewController1(
-    Query query,
-    DocumentReference<Object?>? parent,
-  ) {
-    final controller =
-        PagingController<DocumentSnapshot?, AllTasksRecord>(firstPageKey: null);
-    return controller
-      ..addPageRequestListener(
-        (nextPageMarker) => queryAllTasksRecordPage(
-          queryBuilder: (_) => listViewPagingQuery1 ??= query,
-          nextPageMarker: nextPageMarker,
-          streamSubscriptions: listViewStreamSubscriptions1,
-          controller: controller,
-          pageSize: 25,
-          isStream: true,
-        ),
-      );
-  }
-
   Future waitForFirestoreRequestCompleted2({
     double minWait = 0,
     double maxWait = double.infinity,

@@ -278,34 +278,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Create Task',
       'fr': 'Créer une tâche',
     },
-    'jdl3506k': {
-      'en': 'My Tasks',
-      'fr': 'Mes tâches',
-    },
-    '5kxzrl0y': {
-      'en': 'Due',
-      'fr': 'Exigible',
-    },
-    'kxd2v1e0': {
-      'en': 'Issue #242952592',
-      'fr': 'Numéro 242952592',
-    },
-    '8lt6q1wk': {
-      'en': 'In Progress',
-      'fr': 'En cours',
-    },
-    'wb92ilh9': {
-      'en': 'Andres Reynolds',
-      'fr': 'Andrés Reynolds',
-    },
-    'qufgiwvr': {
-      'en': 'Due',
-      'fr': 'Exigible',
-    },
-    'ovtbeuj4': {
-      'en': 'Tuesday, 10:00am',
-      'fr': 'mardi, 10h00',
-    },
     'd2j80kse': {
       'en': 'Not Started',
       'fr': 'Pas commencé',

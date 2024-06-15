@@ -51,24 +51,6 @@
       "queryScope": "COLLECTION",
       "fields": [
         {
-          "fieldPath": "members",
-          "arrayConfig": "CONTAINS"
-        },
-        {
-          "fieldPath": "dueDate",
-          "order": "DESCENDING"
-        },
-        {
-          "fieldPath": "status",
-          "order": "DESCENDING"
-        }
-      ]
-    },
-    {
-      "collectionGroup": "allTasks",
-      "queryScope": "COLLECTION",
-      "fields": [
-        {
           "fieldPath": "status",
           "order": "ASCENDING"
         },

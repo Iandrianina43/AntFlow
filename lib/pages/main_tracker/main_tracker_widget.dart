@@ -21,7 +21,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 import 'package:provider/provider.dart';
 import 'main_tracker_model.dart';
 export 'main_tracker_model.dart';
@@ -48,7 +47,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
 
     _model.tabBarController = TabController(
       vsync: this,
-      length: 4,
+      length: 3,
       initialIndex: 0,
     )..addListener(() => setState(() {}));
     animationsMap.addAll({
@@ -205,44 +204,6 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
         ],
       ),
       'containerOnPageLoadAnimation9': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          FadeEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 600.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-          MoveEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 600.0.ms,
-            begin: Offset(0.0, 30.0),
-            end: Offset(0.0, 0.0),
-          ),
-        ],
-      ),
-      'containerOnPageLoadAnimation10': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          FadeEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 600.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-          MoveEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 600.0.ms,
-            begin: Offset(0.0, 30.0),
-            end: Offset(0.0, 0.0),
-          ),
-        ],
-      ),
-      'containerOnPageLoadAnimation11': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           FadeEffect(
@@ -561,12 +522,6 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                       Tab(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'jdl3506k' /* My Tasks */,
-                                        ),
-                                      ),
-                                      Tab(
-                                        text:
-                                            FFLocalizations.of(context).getText(
                                           'd2j80kse' /* Not Started */,
                                         ),
                                       ),
@@ -588,7 +543,6 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                       [
                                         () async {},
                                         () async {},
-                                        () async {},
                                         () async {}
                                       ][i]();
                                     },
@@ -598,455 +552,6 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                   child: TabBarView(
                                     controller: _model.tabBarController,
                                     children: [
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 8.0, 0.0, 0.0),
-                                        child: PagedListView<
-                                            DocumentSnapshot<Object?>?,
-                                            AllTasksRecord>(
-                                          pagingController:
-                                              _model.setListViewController1(
-                                            AllTasksRecord.collection
-                                                .where(
-                                                  'members',
-                                                  arrayContains:
-                                                      currentUserReference,
-                                                )
-                                                .orderBy('dueDate',
-                                                    descending: true)
-                                                .orderBy('status',
-                                                    descending: true),
-                                          ),
-                                          padding: EdgeInsets.zero,
-                                          primary: false,
-                                          shrinkWrap: true,
-                                          reverse: false,
-                                          scrollDirection: Axis.vertical,
-                                          builderDelegate:
-                                              PagedChildBuilderDelegate<
-                                                  AllTasksRecord>(
-                                            // Customize what your widget looks like when it's loading the first page.
-                                            firstPageProgressIndicatorBuilder:
-                                                (_) => Center(
-                                              child: SizedBox(
-                                                width: 50.0,
-                                                height: 50.0,
-                                                child:
-                                                    CircularProgressIndicator(
-                                                  valueColor:
-                                                      AlwaysStoppedAnimation<
-                                                          Color>(
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                            // Customize what your widget looks like when it's loading another page.
-                                            newPageProgressIndicatorBuilder:
-                                                (_) => Center(
-                                              child: SizedBox(
-                                                width: 50.0,
-                                                height: 50.0,
-                                                child:
-                                                    CircularProgressIndicator(
-                                                  valueColor:
-                                                      AlwaysStoppedAnimation<
-                                                          Color>(
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                            noItemsFoundIndicatorBuilder: (_) =>
-                                                Center(
-                                              child: Container(
-                                                width:
-                                                    MediaQuery.sizeOf(context)
-                                                            .width *
-                                                        0.8,
-                                                height: 300.0,
-                                                child: EmptyTasksWidget(
-                                                  title: 'No Tasks Assigned',
-                                                  bodyText:
-                                                      'It appears you don\'t have any tasks assigned, create a task by using the button below.',
-                                                ),
-                                              ),
-                                            ),
-                                            itemBuilder:
-                                                (context, _, listViewIndex) {
-                                              final listViewAllTasksRecord =
-                                                  _model
-                                                      .listViewPagingController1!
-                                                      .itemList![listViewIndex];
-                                              return Visibility(
-                                                visible: (listViewAllTasksRecord
-                                                            .status ==
-                                                        'In Progress') ||
-                                                    (listViewAllTasksRecord
-                                                            .status ==
-                                                        'Not Started'),
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          16.0, 4.0, 16.0, 8.0),
-                                                  child: InkWell(
-                                                    splashColor:
-                                                        Colors.transparent,
-                                                    focusColor:
-                                                        Colors.transparent,
-                                                    hoverColor:
-                                                        Colors.transparent,
-                                                    highlightColor:
-                                                        Colors.transparent,
-                                                    onTap: () async {
-                                                      context.pushNamed(
-                                                        'taskDetails',
-                                                        queryParameters: {
-                                                          'taskRef':
-                                                              serializeParam(
-                                                            listViewAllTasksRecord,
-                                                            ParamType.Document,
-                                                          ),
-                                                        }.withoutNulls,
-                                                        extra: <String,
-                                                            dynamic>{
-                                                          'taskRef':
-                                                              listViewAllTasksRecord,
-                                                        },
-                                                      );
-                                                    },
-                                                    child: Container(
-                                                      width: double.infinity,
-                                                      decoration: BoxDecoration(
-                                                        color: () {
-                                                          if (listViewAllTasksRecord
-                                                                  .status ==
-                                                              'Not Started') {
-                                                            return FlutterFlowTheme
-                                                                    .of(context)
-                                                                .secondary30;
-                                                          } else if (listViewAllTasksRecord
-                                                                  .status ==
-                                                              'In Progress') {
-                                                            return FlutterFlowTheme
-                                                                    .of(context)
-                                                                .primary30;
-                                                          } else if (listViewAllTasksRecord
-                                                                  .status ==
-                                                              'Complete') {
-                                                            return FlutterFlowTheme
-                                                                    .of(context)
-                                                                .tertiary30;
-                                                          } else {
-                                                            return FlutterFlowTheme
-                                                                    .of(context)
-                                                                .error30;
-                                                          }
-                                                        }(),
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(12.0),
-                                                        border: Border.all(
-                                                          color: () {
-                                                            if (listViewAllTasksRecord
-                                                                    .status ==
-                                                                'Not Started') {
-                                                              return FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .secondary;
-                                                            } else if (listViewAllTasksRecord
-                                                                    .status ==
-                                                                'In Progress') {
-                                                              return FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primary;
-                                                            } else if (listViewAllTasksRecord
-                                                                    .status ==
-                                                                'Complete') {
-                                                              return FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .alternate;
-                                                            } else {
-                                                              return FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .tertiary;
-                                                            }
-                                                          }(),
-                                                          width: 2.0,
-                                                        ),
-                                                      ),
-                                                      child: Padding(
-                                                        padding: EdgeInsets.all(
-                                                            12.0),
-                                                        child: FutureBuilder<
-                                                            ProjectsRecord>(
-                                                          future: ProjectsRecord
-                                                              .getDocumentOnce(
-                                                                  listViewAllTasksRecord
-                                                                      .projectRef!),
-                                                          builder: (context,
-                                                              snapshot) {
-                                                            // Customize what your widget looks like when it's loading.
-                                                            if (!snapshot
-                                                                .hasData) {
-                                                              return Center(
-                                                                child: SizedBox(
-                                                                  width: 50.0,
-                                                                  height: 50.0,
-                                                                  child:
-                                                                      CircularProgressIndicator(
-                                                                    valueColor:
-                                                                        AlwaysStoppedAnimation<
-                                                                            Color>(
-                                                                      FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .primary,
-                                                                    ),
-                                                                  ),
-                                                                ),
-                                                              );
-                                                            }
-                                                            final columnProjectsRecord =
-                                                                snapshot.data!;
-                                                            return Column(
-                                                              mainAxisSize:
-                                                                  MainAxisSize
-                                                                      .max,
-                                                              crossAxisAlignment:
-                                                                  CrossAxisAlignment
-                                                                      .start,
-                                                              children: [
-                                                                Row(
-                                                                  mainAxisSize:
-                                                                      MainAxisSize
-                                                                          .max,
-                                                                  mainAxisAlignment:
-                                                                      MainAxisAlignment
-                                                                          .spaceBetween,
-                                                                  children: [
-                                                                    Expanded(
-                                                                      child:
-                                                                          Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            12.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Text(
-                                                                          valueOrDefault<
-                                                                              String>(
-                                                                            listViewAllTasksRecord.taskName,
-                                                                            'Task Name',
-                                                                          ),
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .headlineSmall
-                                                                              .override(
-                                                                                fontFamily: FlutterFlowTheme.of(context).headlineSmallFamily,
-                                                                                letterSpacing: 0.0,
-                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).headlineSmallFamily),
-                                                                              ),
-                                                                        ),
-                                                                      ),
-                                                                    ),
-                                                                    Container(
-                                                                      height:
-                                                                          32.0,
-                                                                      decoration:
-                                                                          BoxDecoration(
-                                                                        color:
-                                                                            () {
-                                                                          if (listViewAllTasksRecord.status ==
-                                                                              'Not Started') {
-                                                                            return FlutterFlowTheme.of(context).secondary;
-                                                                          } else if (listViewAllTasksRecord.status ==
-                                                                              'In Progress') {
-                                                                            return FlutterFlowTheme.of(context).primary;
-                                                                          } else if (listViewAllTasksRecord.status ==
-                                                                              'Complete') {
-                                                                            return FlutterFlowTheme.of(context).alternate;
-                                                                          } else {
-                                                                            return FlutterFlowTheme.of(context).tertiary;
-                                                                          }
-                                                                        }(),
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(32.0),
-                                                                      ),
-                                                                      alignment:
-                                                                          AlignmentDirectional(
-                                                                              0.0,
-                                                                              0.0),
-                                                                      child:
-                                                                          Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            12.0,
-                                                                            0.0,
-                                                                            12.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Text(
-                                                                          valueOrDefault<
-                                                                              String>(
-                                                                            listViewAllTasksRecord.status,
-                                                                            'No Status',
-                                                                          ),
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                color: FlutterFlowTheme.of(context).primaryBtnText,
-                                                                                letterSpacing: 0.0,
-                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
-                                                                              ),
-                                                                        ),
-                                                                      ),
-                                                                    ),
-                                                                  ],
-                                                                ),
-                                                                Padding(
-                                                                  padding: EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          4.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                                  child: Text(
-                                                                    valueOrDefault<
-                                                                        String>(
-                                                                      columnProjectsRecord
-                                                                          .projectName,
-                                                                      'No Project',
-                                                                    ),
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodySmall
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              FlutterFlowTheme.of(context).bodySmallFamily,
-                                                                          letterSpacing:
-                                                                              0.0,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
-                                                                        ),
-                                                                  ),
-                                                                ),
-                                                                Divider(
-                                                                  height: 24.0,
-                                                                  thickness:
-                                                                      1.0,
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .lineColor,
-                                                                ),
-                                                                Row(
-                                                                  mainAxisSize:
-                                                                      MainAxisSize
-                                                                          .max,
-                                                                  mainAxisAlignment:
-                                                                      MainAxisAlignment
-                                                                          .start,
-                                                                  children: [
-                                                                    Text(
-                                                                      FFLocalizations.of(
-                                                                              context)
-                                                                          .getText(
-                                                                        '5kxzrl0y' /* Due */,
-                                                                      ),
-                                                                      style: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .override(
-                                                                            fontFamily:
-                                                                                FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                            letterSpacing:
-                                                                                0.0,
-                                                                            fontWeight:
-                                                                                FontWeight.bold,
-                                                                            useGoogleFonts:
-                                                                                GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
-                                                                          ),
-                                                                    ),
-                                                                    Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                                                          8.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                                      child:
-                                                                          Text(
-                                                                        valueOrDefault<
-                                                                            String>(
-                                                                          dateTimeFormat(
-                                                                            'MMMEd',
-                                                                            listViewAllTasksRecord.dueDate,
-                                                                            locale:
-                                                                                FFLocalizations.of(context).languageCode,
-                                                                          ),
-                                                                          'No Date',
-                                                                        ),
-                                                                        style: FlutterFlowTheme.of(context)
-                                                                            .bodySmall
-                                                                            .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
-                                                                              letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
-                                                                            ),
-                                                                      ),
-                                                                    ),
-                                                                    Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                                                          4.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                                      child:
-                                                                          Text(
-                                                                        valueOrDefault<
-                                                                            String>(
-                                                                          dateTimeFormat(
-                                                                            'jm',
-                                                                            listViewAllTasksRecord.dueDate,
-                                                                            locale:
-                                                                                FFLocalizations.of(context).languageCode,
-                                                                          ),
-                                                                          'n/a',
-                                                                        ),
-                                                                        style: FlutterFlowTheme.of(context)
-                                                                            .bodySmall
-                                                                            .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
-                                                                              letterSpacing: 0.0,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
-                                                                            ),
-                                                                      ),
-                                                                    ),
-                                                                    Icon(
-                                                                      Icons
-                                                                          .keyboard_arrow_right_rounded,
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .secondaryText,
-                                                                      size:
-                                                                          24.0,
-                                                                    ),
-                                                                  ],
-                                                                ),
-                                                              ],
-                                                            );
-                                                          },
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ).animateOnPageLoad(animationsMap[
-                                                      'containerOnPageLoadAnimation1']!),
-                                                ),
-                                              );
-                                            },
-                                          ),
-                                        ),
-                                      ),
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 12.0, 0.0, 0.0),
@@ -1387,7 +892,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                       ),
                                                     ),
                                                   ).animateOnPageLoad(animationsMap[
-                                                      'containerOnPageLoadAnimation3']!),
+                                                      'containerOnPageLoadAnimation1']!),
                                                 );
                                               },
                                             );
@@ -1759,7 +1264,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                       ),
                                                     ).animateOnPageLoad(
                                                         animationsMap[
-                                                            'containerOnPageLoadAnimation4']!),
+                                                            'containerOnPageLoadAnimation2']!),
                                                   );
                                                 },
                                               ),
@@ -2129,7 +1634,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                       ),
                                                     ).animateOnPageLoad(
                                                         animationsMap[
-                                                            'containerOnPageLoadAnimation6']!),
+                                                            'containerOnPageLoadAnimation4']!),
                                                   );
                                                 },
                                               ),
@@ -2551,7 +2056,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                           ),
                                                                         ),
                                                                       ).animateOnPageLoad(
-                                                                              animationsMap['containerOnPageLoadAnimation7']!),
+                                                                              animationsMap['containerOnPageLoadAnimation5']!),
                                                                     ),
                                                                   );
                                                                 },
@@ -2979,7 +2484,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                               ),
                                                             ).animateOnPageLoad(
                                                                 animationsMap[
-                                                                    'containerOnPageLoadAnimation9']!),
+                                                                    'containerOnPageLoadAnimation7']!),
                                                           );
                                                         },
                                                       ),
@@ -3381,7 +2886,7 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                               ),
                                                             ).animateOnPageLoad(
                                                                 animationsMap[
-                                                                    'containerOnPageLoadAnimation10']!),
+                                                                    'containerOnPageLoadAnimation8']!),
                                                           );
                                                         },
                                                       ),
