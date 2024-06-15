@@ -1784,9 +1784,9 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                         currentUserReference,
                                                                   )
                                                                   .where(
-                                                                    'completed',
+                                                                    'status',
                                                                     isEqualTo:
-                                                                        true,
+                                                                        'Complete',
                                                                   ),
                                                     )))
                                               .future,

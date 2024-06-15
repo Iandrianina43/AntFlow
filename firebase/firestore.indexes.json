@@ -87,7 +87,7 @@
       "queryScope": "COLLECTION",
       "fields": [
         {
-          "fieldPath": "completed",
+          "fieldPath": "status",
           "order": "ASCENDING"
         },
         {
