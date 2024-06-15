@@ -3467,22 +3467,19 @@ class _MainTrackerWidgetState extends State<MainTrackerWidget>
                                                                   AllTasksRecord>>()
                                                             ..complete(
                                                                 queryAllTasksRecordOnce(
-                                                              queryBuilder: (allTasksRecord) =>
-                                                                  allTasksRecord
-                                                                      .where(
-                                                                        'members',
-                                                                        arrayContains:
-                                                                            currentUserReference,
-                                                                      )
-                                                                      .where(
-                                                                        'status',
-                                                                        isEqualTo:
-                                                                            'Complete',
-                                                                      )
-                                                                      .orderBy(
-                                                                          'completedAt',
-                                                                          descending:
-                                                                              true),
+                                                              queryBuilder:
+                                                                  (allTasksRecord) =>
+                                                                      allTasksRecord
+                                                                          .where(
+                                                                            'members',
+                                                                            arrayContains:
+                                                                                currentUserReference,
+                                                                          )
+                                                                          .where(
+                                                                            'status',
+                                                                            isEqualTo:
+                                                                                'Complete',
+                                                                          ),
                                                             )))
                                                       .future,
                                                   builder: (context, snapshot) {
